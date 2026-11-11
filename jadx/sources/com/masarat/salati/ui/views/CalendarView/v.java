@@ -1,0 +1,11 @@
+package com.masarat.salati.ui.views.CalendarView;
+
+/* compiled from: r8-map-id-1f7525fce23a77ca5737cc01c4781c5fea0585ef334e56cbf05e29f39fb88622 */
+/* loaded from: classes.dex */
+public interface v {
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final f f٢١٧٣e = new f(1);
+
+    CharSequence b(c cVar);
+}

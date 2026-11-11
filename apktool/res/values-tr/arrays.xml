@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adhan_titles">
+        <item>Salatuk Ezan - Doğu stili 1</item>
+        <item>Salatuk Ezan - Doğu stili 2</item>
+        <item>Salatuk Ezan - Mağrip stili 1</item>
+        <item>Salatuk Ezan - Mağrip stili 2</item>
+        <item>Ezan Mekke</item>
+        <item>Ezan Medine</item>
+    </string-array>
+    <string-array name="days">
+        <item>Pazar</item>
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>Çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+    </string-array>
+    <string-array name="dialogAbout_msg">
+        <item>Salatuk sizin namaz vakti arkadaşınızdır.</item>
+        <item>"Konumunuzu otomatik olarak belirleyerek, size doğru namaz vakitlerini verir bildirir ve ayrıca Kıble'nin doğru yönünün gösterir."</item>
+        <item>"Salatuk algoritması, birçok Müslüman ülke tarafından uygulanan geniş bir namaz vakti hesaplama yöntemlerini destekler. Uygulama, konumunuza göre doğru hesaplama yöntemini, fıkıh okulunu ve Ezan'ı seçer."</item>
+        <item>Fakat eğer isterseniz bunu, Ayarlar sekmesinden manuel olarak değiştirebilirsiniz.</item>
+        <item>Doğru bir konumlandırma için, konum ayarlarınızın ve İnternet bağlantınızın veya GPS ayarlarınızın etkinleştirildiğinden emin olunuz!</item>
+        <item>Bize ulaşın:</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>"Facebook'ta Salatuk ile arkadaş olun:"</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>"Twitter'da Salatuk:"</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="dialogFeatures_msg">
+        <item>New Features:</item>
+        <item>- Dark mode adjustments.</item>
+        <item>- Timing adjustments for various countries.</item>
+        <item>"
+"</item>
+        <item>Her hangi bir isteğiniz için lütfen bize ulaşın:</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Bizi facebook ve</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>"Twitter'da takip edin"</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="months_hijri">
+        <item>Muharrem</item>
+        <item>Safer</item>
+        <item>Rebiülevvel</item>
+        <item>Rebiülahir</item>
+        <item>Cemaziyelevvel</item>
+        <item>Cemaziyelahir</item>
+        <item>Recep</item>
+        <item>Şaban</item>
+        <item>Ramazan</item>
+        <item>Şevval</item>
+        <item>Zilkade</item>
+        <item>Zilhicce</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>Ocak</item>
+        <item>Şubat</item>
+        <item>Mart</item>
+        <item>Nisan</item>
+        <item>Mayıs</item>
+        <item>Haziran</item>
+        <item>Temmuz</item>
+        <item>Ağustos</item>
+        <item>Eylül</item>
+        <item>Ekim</item>
+        <item>Kasım</item>
+        <item>Aralık</item>
+    </string-array>
+    <string-array name="prayers_adhans_text">
+        <item>Sabah Ezanı</item>
+        <item>Güneş</item>
+        <item>Öğle Ezanı</item>
+        <item>İkindi Ezanı</item>
+        <item>Akşam Ezanı</item>
+        <item>Yatsı Ezanı</item>
+        <item>Cuma Ezanı</item>
+    </string-array>
+    <string-array name="pt_calcMethod_entries">
+        <item>Egyptian General Survey Authority</item>
+        <item>Islamic Society of North America (ISNA)</item>
+        <item>Muslim World League (MWL)</item>
+        <item>Umm al-Qura, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Algeria, Ministry of Religious Affairs and Endowments</item>
+        <item>Asia, Method of Southeast Asian Countries</item>
+        <item>Austria, Islamic Center Vienna</item>
+        <item>Belgium, Islamic and Cultural Center of Belgium</item>
+        <item>Canada, Islamic Information Society of Calgary</item>
+        <item>Canada, Mississauga ISNA-Canada</item>
+        <item>Canada, Montreal, The Islamic Centre of Quebec</item>
+        <item>Canada, Windsor Islamic Association</item>
+        <item>Czech Republic</item>
+        <item>France, Advisory Board of Imams of Orleans</item>
+        <item>France, Grand Mosque of Lyon</item>
+        <item>France, Grand Mosque of Paris</item>
+        <item>France, Mirail Mosque in Toulouse</item>
+        <item>France, Union of Islamic Organizations of France</item>
+        <item>Germany, Germany-Nuremberg Islamic community</item>
+        <item>Germany, Islamic Center of Aachen</item>
+        <item>Germany, Islamic Center of Munich</item>
+        <item>Iraq, Sunni Endowment Diwan</item>
+        <item>Jordan, Ministry of Awqaf, Islamic Affairs and Holy Places</item>
+        <item>Kazakhstan, Kostanay Regional Mosque</item>
+        <item>Kuwait, Ministry of Awqaf and Islamic Affairs</item>
+        <item>Libya, Ministry of Endowments and Islamic Affairs</item>
+        <item>Luxembourg, Islamic Cultural Center of the Grand Duchy of Luxembourg</item>
+        <item>Malasyia, Malaysian Islamic Development Department</item>
+        <item>Maldives, Ministry of Islamic Affairs</item>
+        <item>Morocco, Ministry of Endowments and Islamic Affairs</item>
+        <item>Oman, Ministry of Endowments and Religious Affairs</item>
+        <item>Palestine, The Ministry of Awqaf and Religious Affairs</item>
+        <item>Qatar Calendar House</item>
+        <item>Russia mufties Council</item>
+        <item>Sudan, The Ministry of Endowments and Guidance</item>
+        <item>Switzerland,Islamic Center of Geneva</item>
+        <item>Syria, Hashemi Calendar</item>
+        <item>Tajikistan, Islamic Centre Of Republic Of Tajikistan</item>
+        <item>Tunisia, Ministry of Religious Affairs</item>
+        <item>Turkey, Presidency of Religious Affairs</item>
+        <item>United Arab Emirates, Department of Islamic Affairs and Charitable Activities-Dubai</item>
+        <item>United Arab Emirates, General Authority Of Islamic Affairs and Endowments</item>
+        <item>United Kingdom, Birmingham Central Mosque</item>
+        <item>United Kingdom, Islamic Culture Center of Blackburn</item>
+        <item>United Kingdom, London Central Mosque</item>
+    </string-array>
+    <string-array name="pt_calcMethod_values">
+        <item>egypt</item>
+        <item>isna</item>
+        <item>mwl</item>
+        <item>makkah</item>
+        <item>karachi</item>
+        <item>algeria</item>
+        <item>malaysia</item>
+        <item>austria</item>
+        <item>belgium</item>
+        <item>calgary</item>
+        <item>mississauga</item>
+        <item>montreal</item>
+        <item>windsor</item>
+        <item>czech</item>
+        <item>orleans</item>
+        <item>lyon</item>
+        <item>paris</item>
+        <item>toulouse</item>
+        <item>uoif</item>
+        <item>nurnberg</item>
+        <item>aachen</item>
+        <item>munchen</item>
+        <item>iraq</item>
+        <item>jordan</item>
+        <item>kazakhstan</item>
+        <item>kuwait</item>
+        <item>libya</item>
+        <item>luxembourg</item>
+        <item>malaysia</item>
+        <item>maldives</item>
+        <item>morocco</item>
+        <item>oman</item>
+        <item>palestine</item>
+        <item>qatar</item>
+        <item>moscow</item>
+        <item>sudan</item>
+        <item>switzerland</item>
+        <item>syria</item>
+        <item>tajikistan</item>
+        <item>tunisia</item>
+        <item>turkey</item>
+        <item>dubai</item>
+        <item>emirates</item>
+        <item>birmingham</item>
+        <item>blackburn</item>
+        <item>london</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_entries">
+        <item>Hiçbiri</item>
+        <item>Gecenin Bir Yarısı Yöntemi</item>
+        <item>Yedinin Biri Gece Yöntemi</item>
+        <item>Açı Temelli Yöntem</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_entries">
+        <item>Şafi/Maliki/Hanbeli</item>
+        <item>Hanefi</item>
+    </string-array>
+    <string-array name="reminder_sounds_titles">
+        <item>Varsayılan Şahadet</item>
+        <item>Varsayılan Sala</item>
+        <item>Şahadet - Mekke</item>
+        <item>Sala - Mekke</item>
+        <item>İkamet, Tamamı - Mekke</item>
+        <item>İkamet, Kısa - Mekke</item>
+        <item>Şahadet - Medine</item>
+        <item>Sala - Medine</item>
+        <item>İkamet, Tamamı - Medine</item>
+        <item>İkamet, Kısa - Medine</item>
+        <item>Kuş 1</item>
+        <item>Kuş 2</item>
+        <item>Kuş 3</item>
+        <item>Zil Sesi</item>
+        <item>Long Bird 1</item>
+        <item>Long Bird 2</item>
+        <item>Long Bird 3</item>
+        <item>Long Ringtone</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_entries">
+        <item>Açılır Pencere</item>
+        <item>Bildirim</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_entries">
+        <item>Zil sesini kullan</item>
+        <item>Medya sesini kullan</item>
+    </string-array>
+    <string-array name="s_calendar_availability_entries">
+        <item>Meşgul</item>
+        <item>Uygun</item>
+    </string-array>
+    <string-array name="s_calendar_days_entries">
+        <item>7 gün</item>
+        <item>15 gün</item>
+    </string-array>
+    <string-array name="silent_notif_Entries">
+        <item>Bildirim Yok</item>
+        <item>Sadece Titreşim</item>
+        <item>Titreşimsiz ses</item>
+        <item>Titreşimli ses</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Entries">
+        <item>Bildirim Yok</item>
+        <item>Sadece titreşim</item>
+        <item>Titreşimsiz ses</item>
+        <item>Titreşimli ses</item>
+    </string-array>
+    <string-array name="time_unites">
+        <item>dakika</item>
+        <item>saatler</item>
+    </string-array>
+    <string-array name="travel_mode_duration_entries">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>1.5 h</item>
+        <item>2 h</item>
+        <item>3 h</item>
+        <item>4 h</item>
+    </string-array>
+    <string-array name="vibration_type_Entries">
+        <item>Kısa</item>
+        <item>Orta</item>
+        <item>Uzun</item>
+        <item>Çok uzun</item>
+    </string-array>
+</resources>

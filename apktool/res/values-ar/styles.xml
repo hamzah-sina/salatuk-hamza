@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogDerectionStyle" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:itemTextAppearance">@style/MenuItemTextAppearance</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorAccent">@color/colorSkyBlue</item>
+        <item name="actionMenuTextColor">@color/colorSkyBlue</item>
+        <item name="appBarLayoutStyle">@style/NavigationButtonStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/autoCompleteTextViewStyle</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorAccent">@color/colorSkyBlue</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="toolbarNavigationButtonStyle">@style/NavigationButtonStyle</item>
+    </style>
+    <style name="AppThemeDark" parent="@style/AppTheme">
+        <item name="backgroundColor">@color/black_dark</item>
+        <item name="colorAccent">@color/colorSkyBlue</item>
+        <item name="colorPrimary">@color/black_dark</item>
+        <item name="colorPrimaryDark">@color/black_dark</item>
+    </style>
+    <style name="DrawerTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">?textColor</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_gravity">center|right</item>
+        <item name="android:fontFamily">@font/cairo_regular</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="NavigationButtonStyle" />
+    <style name="SalatukActivityToolBarStyle" parent="@style/Widget.AppCompat.Toolbar" />
+    <style name="ToolBarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:layout_marginStart">16.0dip</item>
+    </style>
+</resources>

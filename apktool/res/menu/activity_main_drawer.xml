@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/location_group">
+        <item android:id="@id/item_current_location" app:actionLayout="@layout/view_menu_item_txv" />
+    </group>
+    <group android:id="@id/setting_group">
+        <item android:id="@id/item_menu_language" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_volume" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_settings" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_mosques_near_me" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_theme" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_dark_mode" app:actionLayout="@layout/view_menu_item_txv" />
+    </group>
+    <group android:id="@id/sharing_group">
+        <item android:id="@id/item_menu_sharing" app:actionLayout="@layout/view_menu_item_txv" />
+        <item android:id="@id/item_menu_calendar" app:actionLayout="@layout/view_menu_item_txv" />
+    </group>
+    <item android:title="@string/menu_salatuk_name">
+        <menu>
+            <item android:id="@id/item_menu_current_version" android:title="@string/menu_current_version" />
+        </menu>
+    </item>
+</menu>

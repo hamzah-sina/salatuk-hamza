@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.masarat.salati" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="240" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <permission android:label="salatuk_permission" android:name="com.masaratapp.salati.SALATUK_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.masaratapp.salati.SALATUK_PERMISSION"/>
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider"/>
+    </queries>
+    <permission android:name="com.masarat.salati.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.masarat.salati.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:defaultToDeviceProtectedStorage="true" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.masarat.salati.SalatiApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/LightTheme1">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.RemindersVocalSettingsActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.AdhanVocalSettingsActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.SilentModeSettingsActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.AdhanRemindersSettingsActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.DateTimeSettingsActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.PrayerAdjustTimingActivity"/>
+        <activity android:exported="false" android:name="com.masarat.salati.ui.activities.settings.PrayerTimesSettingsActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_settings" android:name="com.masarat.salati.ui.activities.settings.SettingsActivity"/>
+        <activity android:configChanges="locale|orientation" android:exported="true" android:launchMode="singleTop" android:name="com.masarat.salati.ui.activities.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.masarat.salati.ui.activities.ThemeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeActivityStyle"/>
+        <activity android:name="com.masarat.salati.ui.activities.DarkModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.masarat.salati.ui.activities.SharingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.masarat.salati.ui.activities.ContinousNotifSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.masarat.salati.ui.activities.AddWorldCityActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|orientation" android:name="com.masarat.salati.ui.activities.CalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.masarat.salati.ui.activities.QiblaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.masarat.salati.ui.activities.LocationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|orientation" android:launchMode="singleTop" android:name="com.masarat.salati.ui.activities.SoundPickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="locale|orientation" android:launchMode="singleTop" android:name="com.masarat.salati.ui.activities.AdhanListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.masarat.salati.ui.activities.AddReminderActivity" android:screenOrientation="portrait" android:theme="@style/SalatukAppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:excludeFromRecents="true" android:name="com.masarat.salati.ui.activities.ImportantNoteActivity" android:theme="@style/Transparent"/>
+        <activity android:configChanges="locale|orientation" android:launchMode="singleTask" android:name="com.masarat.salati.ui.activities.SalatiActivity" android:screenOrientation="portrait" android:theme="@style/SalatiActivityTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.masarat.salati.ui.activities.NotificationPushActivity" android:theme="@style/Transparent"/>
+        <activity android:excludeFromRecents="true" android:label="" android:name="com.masarat.salati.ui.activities.AdhanAlarmActivity" android:screenOrientation="portrait" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.DSTPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.PrayertimesPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.AdhanPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.VibrationPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.AdhanAlarmModePreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.AdjustPrayerMinPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.CalendarPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.SilentPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.AdhanSilentPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.RemindersSilentPreferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.masarat.salati.preferences.Preferences" android:screenOrientation="portrait" android:theme="@style/SettingsTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.masarat.salati.ui.activities.TransparencyLevelActivity" android:showOnLockScreen="true" android:theme="@style/AppTheme.Translucent"/>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetV2" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_v2_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.receivers.NotificationDismissedReceiver"/>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetV3" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_v3_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetLarge" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_large_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetMedium" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_medium_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetAll" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.widgets.SalatukWidgetLockScreenTransparent" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_lock_screen_transparent_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/widget_small_label" android:name="com.masarat.salati.widgets.SalatukWidgetSmall" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_provider"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:label="@string/widget_small_circle_label" android:name="com.masarat.salati.widgets.SalatukWidgetSmallCircle" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_circle_provider"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:label="@string/widget_small_crescent_moon_label" android:name="com.masarat.salati.widgets.SalatukWidgetSmallCrescentMoon" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_crescent_moon_provider"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.receivers.SalatiReceiver" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="com.masarat.salatuk.PRAYERTIMES_REQUEST"/>
+                <action android:name="com.masarat.salatuk.START_ACTIVITY"/>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.masarat.salati.receivers.UpgradeReceiver" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.masarat.salati.receivers.AdhanReceiver"/>
+        <receiver android:exported="false" android:name="com.masarat.salati.receivers.TravelModeReceiver"/>
+        <receiver android:exported="false" android:name="com.masarat.salati.receivers.ContinuousNotificationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.masarat.salati.receivers.SilentReceiver"/>
+        <receiver android:name="com.masarat.salati.receivers.CancelAdhanReceiver"/>
+        <receiver android:exported="false" android:name="com.masarat.salati.services.AdhanService$MediaBroadcastReceiver" android:permission="com.masaratapp.salati.SALATUK_PERMISSION">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.masarat.salati.receivers.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.masarat.salati.receivers.UserUnlockedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_UNLOCKED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.masarat.salati.services.AdhanService" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.masarat.salati.services.LocationService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync|location" android:name="com.masarat.salati.services.SalatiService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.masarat.salati.services.PriereService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.masarat.salati.services.PersistentNotificationService" android:stopWithTask="true"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.masarat.salati.services.SilentService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.masarat.salati.services.OpenLinkService"/>
+        <service android:exported="false" android:name="com.masarat.salati.services.SalatiRefreshService" android:process=":refresh"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value=""/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.masarat.salati.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+    </application>
+</manifest>

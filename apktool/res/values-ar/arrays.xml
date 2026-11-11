@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adhan_titles">
+        <item>أذان الحرم المكي</item>
+        <item>أذان الحرم المدني</item>
+        <item>أذان صيغة شرقية-الأول</item>
+        <item>أذان صيغة شرقية-الثاني</item>
+        <item>أذان صيغة مغربية-الأول</item>
+        <item>أذان صيغة مغربية-الثاني</item>
+    </string-array>
+    <string-array name="days">
+        <item>الأحد</item>
+        <item>الإثنين</item>
+        <item>الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </string-array>
+    <string-array name="days_first_letter">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="dialogAbout_msg">
+        <item>تطبيق صلاتك هو رفيقك للحفاظ على صلاتك</item>
+        <item>عن طريق تحديد موقعك تلقائيا، بإمكان هذا التطبيق أن يعلمك بأوقات الصلاة وكذلك تحديد اتجاه القبلة</item>
+        <item>تطبيق صلاتك يستعمل عددا مهما من الطرق الحسابية المعتمدة في أغلب العالم الإسلامي.اعتمادا على موقعك، يختار التطبيق طريقة الحساب المناسبة، المدرسة الفقهية و الأذان المناسب</item>
+        <item>يمكنك تغيير هذه الاختيارات يدويا في نافذة الإعدادات</item>
+        <item>لتحديد الموقع بدقة، عليك التأكد من أن إعدادات الموقع الجغرافي مشغلة و أنك متصل بالإنترنت أو جي بي إس الخاص بك</item>
+        <item>إتصل بنا على</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>كن من محبي صفحة صلاتك على فيسبوك</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>تطبيق صلاتك على تويتر</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="dialogFeatures_msg">
+        <item>خصائص الإصدار الأخير :</item>
+        <item>- تعديلات الوضع الليلي.</item>
+        <item>- تعديلات التوقيت لمختلف البلدان.</item>
+        <item>"
+"</item>
+        <item>من أجل التواصل معنا المرجو مراسلتنا على</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>تا بع آخر مستجدات التطبيق على فيسبوك</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>وكذلك على تويتر</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="gregorian_days_first_letter">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="months_hijri">
+        <item>محرم</item>
+        <item>صفر</item>
+        <item>ربيع الأول</item>
+        <item>ربيع الآخر</item>
+        <item>جمادى الأولى</item>
+        <item>جمادى الآخرة</item>
+        <item>رجب</item>
+        <item>شعبان</item>
+        <item>رمضان</item>
+        <item>شوال</item>
+        <item>ذو القعدة</item>
+        <item>ذو الحجة</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+    <string-array name="prayers_adhans_text">
+        <item>أذان صلاة الفجر</item>
+        <item>وقت الشروق</item>
+        <item>أذان صلاة الظهر</item>
+        <item>أذان صلاة العصر</item>
+        <item>أذان صلاة المغرب</item>
+        <item>أذان صلاة العشاء</item>
+        <item>أذان صلاة الجمعة</item>
+    </string-array>
+    <string-array name="pt_calcMethod_entries">
+        <item>تقويم أم القرى، مكة المكرمة</item>
+        <item>رابطة العالم الإسلامي</item>
+        <item>الهيئة المصرية العامة للمساحة</item>
+        <item>جامعة العلوم الإسلامية، كراتشي</item>
+        <item>الجمعية الإسلامية لأمريكا الشمالية</item>
+        <item>الإمارات العربية المتحدة، الهيئة العامة للشؤون الإسلامية والأوقاف</item>
+        <item>الإمارات العربية المتحدة، دائرة الشؤون الإسلامية والعمل الخيري بدبي</item>
+        <item>قطر، دار التقويم القطري</item>
+        <item>الكويت، وزارة الاوقاف والشؤون الإسلامية</item>
+        <item>الأردن، وزارة الاوقاف والشؤون والمقدسات الإسلامية</item>
+        <item>العراق، ديوان الوقف السني</item>
+        <item>سوريا، التقويم الهاشمي</item>
+        <item>سلطنة عمان، وزارة الاوقاف والشؤون الدينية</item>
+        <item>المغرب، وزارة الأوقاف والشؤون الإسلامية</item>
+        <item>الجزائر، وزارة الشؤون الدينية والاوقاف</item>
+        <item>تونس، وزارة الشؤون الدينية</item>
+        <item>ليبيا، وزارة الأوقاف والشؤون الإسلامية</item>
+        <item>تركيا، رئاسة الشؤون الدينية</item>
+        <item>فرنسا،اتحاد المنظمات الإسلامية</item>
+        <item>فرنسا، مسجد باريس الكبير</item>
+        <item>فرنسا، المجلس الاستشاري لأئمة أورليان</item>
+        <item>فرنسا، مسجد ميريل في تولوز</item>
+        <item>فرنسا، الجامع الكبير في ليون</item>
+        <item>المملكة المتحدة، مسجد برمنغهام المركزي</item>
+        <item>المملكة المتحدة، مسجد لندن المركزي</item>
+        <item>ألمانيا، المركز الإسلامي في ميونخ</item>
+        <item>ألمانيا، المركز الإسلامي في آخن</item>
+        <item>كندا، مونتريال، المركز الإسلامي بكيبيك</item>
+        <item>جزر المالديف، وزارة الشؤون الإسلامية</item>
+        <item>طريقة الحساب بدول جنوب شرق أسيا</item>
+        <item>الجمهورية التشيكية</item>
+        <item>المركز الإسلامي في جنيف</item>
+        <item>فلسطين، وزارة الأوقاف والشئون الدينية</item>
+        <item>بلاكبرن، مركز الثقافة الاسلامية</item>
+        <item>سودان، وزارة الأوقاف والإرشاد</item>
+        <item>بلجيكا, المركز الإسلامي والثقافي البلجيكي</item>
+        <item>ألمانيا ، ألمانيا - نورمبرج المجتمع الإسلامي</item>
+        <item>كندا ، جمعية وندسور الإسلامية</item>
+        <item>كندا ، مجتمع المعلومات الإسلامي في كالجاري</item>
+        <item>روسيا ،مجلس المفتين الروسي</item>
+        <item>ماليزيا ، وزارة التنمية الإسلامية الماليزية</item>
+        <item>كازاخستان ، مسجد كوستناي الإقليمي</item>
+        <item>تاجيكستان, المركز الإسلامي لجمهورية تاجيكستان</item>
+        <item>النمسا ، المركز الإسلامي في فيينا</item>
+        <item>المركز الثقافي الإسلامي لدوقية لوكسمبورغ الكبرى</item>
+        <item>كندا ، ميسيسوجا إيسنا - كندا</item>
+    </string-array>
+    <string-array name="pt_calcMethod_values">
+        <item>makkah</item>
+        <item>mwl</item>
+        <item>egypt</item>
+        <item>karachi</item>
+        <item>isna</item>
+        <item>emirates</item>
+        <item>dubai</item>
+        <item>qatar</item>
+        <item>kuwait</item>
+        <item>jordan</item>
+        <item>iraq</item>
+        <item>syria</item>
+        <item>oman</item>
+        <item>morocco</item>
+        <item>algeria</item>
+        <item>tunisia</item>
+        <item>libya</item>
+        <item>turkey</item>
+        <item>uoif</item>
+        <item>paris</item>
+        <item>orleans</item>
+        <item>toulouse</item>
+        <item>lyon</item>
+        <item>birmingham</item>
+        <item>london</item>
+        <item>munchen</item>
+        <item>aachen</item>
+        <item>montreal</item>
+        <item>maldives</item>
+        <item>malaysia</item>
+        <item>czech</item>
+        <item>switzerland</item>
+        <item>palestine</item>
+        <item>blackburn</item>
+        <item>sudan</item>
+        <item>belgium</item>
+        <item>nurnberg</item>
+        <item>windsor</item>
+        <item>calgary</item>
+        <item>moscow</item>
+        <item>malaysia</item>
+        <item>kazakhstan</item>
+        <item>tajikistan</item>
+        <item>austria</item>
+        <item>luxembourg</item>
+        <item>mississauga</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_entries">
+        <item>بدون تعديل</item>
+        <item>طريقة منتصف الليل</item>
+        <item>طريقة سُبع الليل</item>
+        <item>الطريقة القائمة على الزاوية</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_entries">
+        <item>مالكي، شافعي، حنبلي</item>
+        <item>حنفي</item>
+    </string-array>
+    <string-array name="reminder_sounds_titles">
+        <item>شهادة-التطبيق</item>
+        <item>حي على الصلاة-التطبيق</item>
+        <item>شهادة-مكة</item>
+        <item>حي على الصلاة-مكة</item>
+        <item>إقامة كاملة -مكة</item>
+        <item>إقامة مختصرة -مكة</item>
+        <item>شهادة-المدينة</item>
+        <item>حي على الصلاة-المدينة</item>
+        <item>إقامة كاملة -المدينة</item>
+        <item>إقامة مختصرة -المدينة</item>
+        <item>طيور-1</item>
+        <item>طيور-2</item>
+        <item>طيور-3</item>
+        <item>نغمة</item>
+        <item>طيور طويل-1</item>
+        <item>طيور طويل-2</item>
+        <item>طيور طويل-3</item>
+        <item>نغمة طويلة</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_entries">
+        <item>نافذة</item>
+        <item>إشعار</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_entries">
+        <item>استعمال مستوى صوت رنين الهاتف</item>
+        <item>استعمال مستوى صوت الميديا</item>
+    </string-array>
+    <string-array name="s_calendar_availability_entries">
+        <item>مشغول</item>
+        <item>متواجد</item>
+    </string-array>
+    <string-array name="s_calendar_days_entries">
+        <item>7 أيام</item>
+        <item>15 يوما</item>
+    </string-array>
+    <string-array name="silent_notif_Entries">
+        <item>بدون تنبيه</item>
+        <item>اهتزاز فقط</item>
+        <item>نغمة بدون اهتزاز</item>
+        <item>نغمة مع اهتزاز</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Entries">
+        <item>بدون تنبيه</item>
+        <item>اهتزاز فقط</item>
+        <item>نغمة بدون اهتزاز</item>
+        <item>نغمة مع اهتزاز</item>
+    </string-array>
+    <string-array name="time_format_entries">
+        <item>تلقائي (تبعا لإعدادت الجهاز)</item>
+        <item>استعمال نظام 12 ساعة (1:00 م)</item>
+        <item>استعمال نظام 24 ساعة (13:00)</item>
+    </string-array>
+    <string-array name="time_unites">
+        <item>دقائق</item>
+        <item>ساعات</item>
+    </string-array>
+    <string-array name="travel_mode_duration_entries">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>1.5 h</item>
+        <item>2 h</item>
+        <item>3 h</item>
+        <item>4 h</item>
+    </string-array>
+    <string-array name="vibration_type_Entries">
+        <item>قصير</item>
+        <item>متوسط</item>
+        <item>طويل</item>
+        <item>طويل جدا</item>
+    </string-array>
+</resources>

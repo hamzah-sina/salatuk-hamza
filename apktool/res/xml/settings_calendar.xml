@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/s_calendar_firstCat" android:key="calendarfirstCat">
+        <com.masarat.salati.util.ListPreference android:enabled="false" android:layout="@layout/preference" android:title="@string/s_calendar_name_title" android:key="s_calendar_name" android:summary="@string/s_calendar_name_summary" android:widgetLayout="@layout/preference_icon_list" />
+        <com.masarat.salati.util.ListPreference android:enabled="false" android:entries="@array/s_calendar_days_entries" android:layout="@layout/preference" android:title="@string/s_calendar_days_title" android:key="s_calendar_days" android:summary="@string/s_calendar_days_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/s_calendar_days_defaultValue" android:entryValues="@array/s_calendar_days_values" />
+        <CheckBoxPreference android:enabled="false" android:layout="@layout/preference" android:title="@string/s_calendar_reminders_title" android:key="s_calendar_reminders" android:summary="@string/s_calendar_reminders_summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/s_calendar_reminders_defaultValue" />
+        <com.masarat.salati.util.ListPreference android:enabled="false" android:entries="@array/s_calendar_availability_entries" android:layout="@layout/preference" android:title="@string/s_calendar_availability_title" android:key="s_calendar_availability" android:summary="@string/s_calendar_availability_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/s_calendar_availability_defaultValue" android:entryValues="@array/s_calendar_availability_values" />
+        <Preference android:enabled="false" android:layout="@layout/preference_button" android:title="@string/s_calendar_export_title" android:key="s_calendar_export" />
+    </PreferenceCategory>
+</PreferenceScreen>

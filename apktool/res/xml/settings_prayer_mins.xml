@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/adjust_min_category" android:key="adjust_min_category">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/adjust_min_activation_title" android:key="adjust_min_activation" android:summary="@string/adjust_min_activation_summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="true" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_fajr_Title" android:key="@string/adjust_min_fajr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_shorook_Title" android:key="@string/adjust_min_shorook_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_dohr_Title" android:key="@string/adjust_min_dohr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_asr_Title" android:key="@string/adjust_min_asr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_maghreb_Title" android:key="@string/adjust_min_maghreb_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.Preference android:layout="@layout/preference" android:title="@string/adjust_min_ichaa_Title" android:key="@string/adjust_min_ichaa_Key" android:widgetLayout="@layout/preference_icon_next" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="?bottomNavbackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textColor="?textColor" android:layout_gravity="center|left" android:id="@id/salatukShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SalatukShare" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="15.0sp" android:textColor="?textColor" android:layout_gravity="center" android:id="@id/multi" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" />
+    </FrameLayout>
+    <ListView android:id="@id/listViewSN" android:background="@drawable/bgopact" android:padding="10.0dip" android:paddingBottom="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.78" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hybrideShareLinear" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/planifiedShareLinear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <Button android:gravity="left" android:layout_gravity="left" android:id="@id/buttonClearSharing" android:background="@android:drawable/ic_delete" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="" />
+            <TextView android:textColor="@color/route_color" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/txtClearSharing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/planShare" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="?secondaryTextColor" android:gravity="center" android:id="@id/txtSayPlanfiedShared" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txtSayPlanfiedShared2" />
+        <TextView android:layout_gravity="right" android:id="@id/tvLetterRestTwitter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Twitter:140" />
+        <EditText android:id="@id/TextToShare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/sharedTextUs" android:lines="5" android:ems="10" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/buttons" android:background="#ffe5e0e0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/buttonAbordSharing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" />
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/buttonSelectSN" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/OK" />
+    </LinearLayout>
+</LinearLayout>

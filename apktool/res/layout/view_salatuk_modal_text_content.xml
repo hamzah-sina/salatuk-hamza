@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.masarat.salati.ui.views.SalatukTextView android:textSize="@dimen/_15ssp" android:textColor="?modalBodyTextColor" android:id="@id/modal_body_txv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3" android:textAlignment="viewStart" app:fontName="Roboto" app:style="Regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

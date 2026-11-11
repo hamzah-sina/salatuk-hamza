@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/s_adhan" android:key="s_cat_adhan">
+        <Preference android:layout="@layout/preference" android:title="@string/persistent_notification_title" android:key="continuous_notification" android:summary="@string/persistent_notification_desc" android:shouldDisableView="false" />
+        <Preference android:layout="@layout/preference" android:title="@string/s_adhan_alarm_mode_title" android:key="adhan_alarm_mode" android:widgetLayout="@layout/preference_icon_next" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/s_adhan_volume_stop_title" android:key="stop_by_volume_activation" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/s_adhan_volume_stop_defaultValue" />
+        <Preference android:layout="@layout/preference" android:title="@string/s_adhan_silent_mode_title" android:key="silent_mode" android:summary="@string/s_adhan_silent_mode_summary" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference" android:title="@string/s_adhan_in_silent_title" android:key="adhan_silent" android:summary="@string/s_adhan_in_silent_summary" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference" android:title="@string/s_reminders_in_silent_title" android:key="reminders_silent" android:summary="@string/s_reminders_in_silent_summary" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference" android:title="@string/s_adhan_vibration_title" android:key="vibration_settings" android:summary="@string/s_adhan_vibration_summary" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.ListPreference android:entries="@array/s_adhan_volume_type_entries" android:layout="@layout/preference" android:title="@string/s_adhan_volume_type_title" android:key="adhan_volume_type" android:summary="@string/s_adhan_volume_type_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/s_adhan_volume_type_defaultValue" android:negativeButtonText="@string/dialogPreference_cancel" android:entryValues="@array/s_adhan_volume_type_values" />
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/s_adhan_wakelock_title" android:key="wakelock_activation" android:summary="@string/s_adhan_wakelock_summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/s_adhan_wakelock_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/s_adhan_turn_phone_title" android:key="stop_by_turn_phone_activation" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/s_adhan_turn_phone_defaultValue" />
+    </PreferenceCategory>
+</PreferenceScreen>

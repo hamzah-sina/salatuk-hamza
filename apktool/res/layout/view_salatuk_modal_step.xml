@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.masarat.salati.ui.views.SalatukTextView android:textSize="@dimen/_10ssp" android:textColor="?modalBodyTextColor" android:gravity="center" android:id="@id/step_badge" android:background="@drawable/bg_modal_step_badge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:includeFontPadding="false" app:fontName="Roboto" app:keepFont="true" app:style="Medium" />
+    <com.masarat.salati.ui.views.SalatukTextView android:textSize="@dimen/_13ssp" android:textColor="?modalBodyTextColor" android:id="@id/step_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingMultiplier="1.1" android:textAlignment="viewStart" android:layout_marginStart="10.0dip" app:fontName="Roboto" app:style="Regular" />
+</LinearLayout>

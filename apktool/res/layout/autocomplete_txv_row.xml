@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.masarat.salati.ui.views.SalatukTextView android:textSize="20.0sp" android:textColor="?textColor" android:gravity="start|center" android:id="@id/city_country" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:textDirection="locale" />
+    <com.masarat.salati.ui.views.SalatukTextView android:textSize="13.0sp" android:textColor="#80000000" android:gravity="start|center" android:id="@id/lat_lng" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="latitude: 34.509403, longitude: 60.045044" android:textDirection="locale" />
+    <TextView android:id="@id/lat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/lng" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

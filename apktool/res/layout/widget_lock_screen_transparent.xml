@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/w_root" android:background="@android:color/transparent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/w_row_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/w_prayer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fajr" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/w_punctuation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=", " />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/w_prayer_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="05:45" />
+    </LinearLayout>
+    <Chronometer android:textSize="22.0dip" android:textStyle="bold" android:textColor="#ffffa500" android:id="@id/w_counter_chrono" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="#ffffa500" android:id="@id/w_counter" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="-+00:00:00" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/w_city" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="London" android:alpha="0.7" />
+</LinearLayout>

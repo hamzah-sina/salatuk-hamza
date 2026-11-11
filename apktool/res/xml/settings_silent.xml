@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/silent_firstCat" android:key="silentfirstCat">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/silent_activation_Title" android:key="@string/silent_activation_Key" android:summary="@string/silent_activation_Summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/silent_activation_DefaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/silent_vibrate_Title" android:key="@string/silent_vibrate_Key" android:summary="@string/silent_vibrate_Summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/silent_vibrate_DefaultValue" />
+        <com.masarat.salati.util.ListPreference2 android:entries="@array/silent_notif_Entries" android:layout="@layout/preference" android:title="@string/silent_notif_Title" android:key="@string/silent_notif_Key" android:summary="@string/silent_notif_Summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/silent_notif_DefaultValue" android:positiveButtonText="@string/silent_dialog_ok" android:entryValues="@array/silent_notif_Values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/silent_secondCat" android:key="silentSecondCat">
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_fajr_Title" android:key="@string/silent_fajr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_dohr_Title" android:key="@string/silent_dohr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_jumuaa_Title" android:key="@string/silent_jumuaa_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_asr_Title" android:key="@string/silent_asr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_maghreb_Title" android:key="@string/silent_maghreb_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/silent_ichaa_Title" android:key="@string/silent_ichaa_Key" android:widgetLayout="@layout/preference_icon_next" />
+    </PreferenceCategory>
+</PreferenceScreen>

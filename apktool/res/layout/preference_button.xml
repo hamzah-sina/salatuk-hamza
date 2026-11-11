@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+        <com.masarat.salati.util.views.TextViewAR android:textAppearance="?android:textAppearanceMediumInverse" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:background="#ff2d9fc9" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout="@layout/preference_category_purple" android:title="@string/s_android_apps_category" android:key="AndroidApps">
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_sumoo_android_title" android:key="s_app_sumoo_android" android:summary="@string/s_app_sumoo_android_summary" android:widgetLayout="@null" app:prefIcon="@string/s_app_sumoo_android_icon" app:prefLink="@string/s_app_sumoo_android_link" />
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_feelic_android_title" android:key="s_app_feelic_android" android:summary="@string/s_app_feelic_android_summary" android:widgetLayout="@null" app:prefIcon="@string/s_app_feelic_android_icon" app:prefLink="@string/s_app_feelic_android_link" />
+    </PreferenceCategory>
+</PreferenceScreen>

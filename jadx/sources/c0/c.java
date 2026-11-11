@@ -1,0 +1,23 @@
+package c0;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.pm.PackageManager;
+import java.lang.reflect.InvocationTargetException;
+
+/* compiled from: r8-map-id-1f7525fce23a77ca5737cc01c4781c5fea0585ef334e56cbf05e29f39fb88622 */
+/* loaded from: classes.dex */
+public abstract class c {
+    public static boolean a(Activity activity) {
+        return activity.isLaunchedFromBubble();
+    }
+
+    @SuppressLint({"BanUncheckedReflection"})
+    public static boolean b(Activity activity, String str) {
+        try {
+            return ((Boolean) PackageManager.class.getMethod("shouldShowRequestPermissionRationale", String.class).invoke(activity.getApplication().getPackageManager(), str)).booleanValue();
+        } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused) {
+            return activity.shouldShowRequestPermissionRationale(str);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:ellipsize="marquee" android:gravity="left" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <RadioGroup android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textAppearance="?android:textAppearanceMediumInverse" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center|left" android:id="@id/pref_choice_1" android:fadingEdge="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:singleLine="true" android:drawableLeft="@android:drawable/btn_radio" android:drawablePadding="5.0dip" android:layout_weight="0.5" />
+            <RadioButton android:textAppearance="?android:textAppearanceMediumInverse" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center|left" android:id="@id/pref_choice_2" android:fadingEdge="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:singleLine="true" android:drawableLeft="@android:drawable/btn_radio" android:drawablePadding="5.0dip" android:layout_weight="0.5" />
+        </RadioGroup>
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:gravity="left" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" />
+    </LinearLayout>
+</LinearLayout>

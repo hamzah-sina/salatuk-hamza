@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prayer_margin">32.0dip</dimen>
+    <dimen name="title_top_matgin_32_dp">32.0dip</dimen>
+    <dimen name="up_comming_event_text_size">16.0sp</dimen>
+    <dimen name="up_comming_event_top_margin">15.0dip</dimen>
+</resources>

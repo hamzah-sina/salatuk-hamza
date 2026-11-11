@@ -1,0 +1,38 @@
+version: 2.10.0
+apkFileName: Salatuk 3.7.73.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 36
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 438
+  versionName: 3.7.73-hamza
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  age-signals.properties: 8
+  androidsupportmultidexversion.txt: 8
+  app-update.properties: 8
+  core-common.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-location.properties: 8
+  play-services-tasks.properties: 8
+  review.properties: 8
+doNotCompress:
+- resources.arsc
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- ogg
+- m4a
+- png
+- jpg

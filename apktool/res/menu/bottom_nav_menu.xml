@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home_black_24dp" android:id="@id/navigation_home" android:title="" />
+    <item android:icon="@drawable/ic_prayers_black_24dp" android:id="@id/navigation_prayers" android:title="" />
+    <item android:icon="@drawable/ic_reminders_black_24dp" android:id="@id/navigation_reminders" android:title="" />
+    <item android:icon="@drawable/ic_world_cities_black_24dp" android:id="@id/navigation_world_cities" android:title="" />
+    <item android:icon="@drawable/ic_qibla_black_24dp" android:id="@id/navigation_qibla" android:title="" />
+</menu>

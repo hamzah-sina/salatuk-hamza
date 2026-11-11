@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/adhan_alarm_mode_screen_title" android:key="adhanAlarmMode">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/adhan_alarm_mode_title" android:key="adhan_alarm_mode" android:summary="@string/adhan_alarm_mode_summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/adhan_alarm_mode_screen_description_title">
+        <Preference android:layout="@layout/preference" android:key="adhan_alarm_mode_description" android:summary="@string/adhan_alarm_mode_description_when_on" />
+    </PreferenceCategory>
+</PreferenceScreen>

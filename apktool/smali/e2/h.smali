@@ -1,0 +1,70 @@
+.class public final Le2/h;
+.super Ljava/lang/Object;
+.source "r8-map-id-1f7525fce23a77ca5737cc01c4781c5fea0585ef334e56cbf05e29f39fb88622"
+
+# interfaces
+.implements Lr1/p0;
+
+
+# virtual methods
+.method public final a(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p1, Lr1/o0;
+
+    .line 6
+    .line 7
+    iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
+    .line 8
+    .line 9
+    const/4 v1, -0x1
+
+    .line 10
+    if-ne v0, v1, :cond_0
+
+    .line 11
+    .line 12
+    iget p1, p1, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 13
+    .line 14
+    if-ne p1, v1, :cond_0
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 18
+    .line 19
+    const-string v0, "Pages must fill the whole ViewPager2 (use match_parent)"
+
+    .line 20
+    .line 21
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    throw p1
+.end method
+
+.method public final d(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

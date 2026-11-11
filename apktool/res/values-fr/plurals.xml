@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hour_short">
+        <item quantity="other">%s h</item>
+        <item quantity="zero"></item>
+        <item quantity="one">%s h</item>
+        <item quantity="two">%s h</item>
+        <item quantity="few">%s h</item>
+        <item quantity="many">%s h</item>
+    </plurals>
+    <plurals name="hours_ahead">
+        <item quantity="other">"%s heures d'avance"</item>
+        <item quantity="zero">même heure</item>
+        <item quantity="one">"%s heure d'avance"</item>
+        <item quantity="two">"%s heures d'avance"</item>
+        <item quantity="few">"%s heures d'avance"</item>
+        <item quantity="many">"%s heures d'avance"</item>
+    </plurals>
+    <plurals name="hours_behind">
+        <item quantity="other">%s heures de retard</item>
+        <item quantity="zero">même heure</item>
+        <item quantity="one">%s heure de retard</item>
+        <item quantity="two">%s heures de retard</item>
+        <item quantity="few">%s heures de retard</item>
+        <item quantity="many">%s heures de retard</item>
+    </plurals>
+    <plurals name="minute_short">
+        <item quantity="other">%s min</item>
+        <item quantity="zero"></item>
+        <item quantity="one">%s min</item>
+        <item quantity="two">%s min</item>
+        <item quantity="few">%s min</item>
+        <item quantity="many">%s min</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nouvelles notifications</item>
+        <item quantity="one">%d nouvelle notification</item>
+    </plurals>
+</resources>

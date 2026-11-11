@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prayer_margin">1.0dip</dimen>
+    <dimen name="title_top_matgin_32_dp">2.0dip</dimen>
+    <dimen name="up_comming_event_text_size">1.0sp</dimen>
+    <dimen name="up_comming_event_top_margin">1.0dip</dimen>
+    <dimen name="adhan_tvMin_textSize">23.0sp</dimen>
+    <dimen name="clock_time_textSize">40.0sp</dimen>
+    <dimen name="qibla_city_marginB">20.0dip</dimen>
+    <dimen name="qibla_city_textSize">16.0sp</dimen>
+    <dimen name="w_city_textSize">16.0sp</dimen>
+    <dimen name="w_date_textSize">14.0sp</dimen>
+    <dimen name="w_plus_moins_textSize">32.0sp</dimen>
+    <dimen name="w_prayer_bigName_textSize">27.0sp</dimen>
+    <dimen name="w_prayer_n_t_textSize">16.0sp</dimen>
+</resources>

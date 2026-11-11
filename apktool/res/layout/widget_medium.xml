@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/w_parentLayout" android:background="@color/widget_day_20p" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="ltr" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="17.0dip" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/widget_error_msg" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/w_header_row" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="36.0dip" android:textColor="#ffffffff" android:id="@id/w_day_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/roboto_medium" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/w_gregorian_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/white_opacity_70" android:ellipsize="end" android:id="@id/w_hijri_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Chronometer android:textSize="19.0dip" android:textColor="@color/colorOrange" android:ellipsize="end" android:gravity="center" android:id="@id/remaining_time_chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/colorOrange" android:ellipsize="end" android:gravity="center" android:id="@id/current_prayer_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@font/roboto_medium" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:id="@id/w_prayer_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <TextView android:layout_gravity="center_vertical" android:background="@color/white_opacity_70" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/w_dots_row" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w_dot1_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot1_bar_left_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot1_bar_left_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot1_bar_left_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="16.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot1_s" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot1_m" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot1_l" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/widget_dot_base" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot1_bar_right_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot1_bar_right_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot1_bar_right_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w_dot2_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot2_bar_left_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot2_bar_left_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot2_bar_left_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="16.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot2_s" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot2_m" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot2_l" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/widget_dot_base" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot2_bar_right_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot2_bar_right_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot2_bar_right_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w_dot3_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot3_bar_left_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot3_bar_left_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot3_bar_left_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="16.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot3_s" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot3_m" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot3_l" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/widget_dot_base" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot3_bar_right_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot3_bar_right_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot3_bar_right_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w_dot4_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot4_bar_left_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot4_bar_left_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot4_bar_left_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="16.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot4_s" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot4_m" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot4_l" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/widget_dot_base" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot4_bar_right_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot4_bar_right_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot4_bar_right_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w_dot5_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot5_bar_left_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot5_bar_left_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="end|center" android:id="@id/w_dot5_bar_left_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="16.0dip" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot5_s" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot5_m" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/widget_dot_base" />
+                        <ImageView android:layout_gravity="center" android:id="@id/w_dot5_l" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/widget_dot_base" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot5_bar_right_s" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot5_bar_right_m" android:background="@color/white_opacity_30" android:layout_width="35.0dip" android:layout_height="2.0dip" />
+                        <TextView android:layout_gravity="start|center" android:id="@id/w_dot5_bar_right_l" android:background="@color/white_opacity_30" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="2.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                <TextView android:id="@id/w_fajr_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <TextView android:id="@id/w_shorook_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <TextView android:id="@id/w_dohr_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <TextView android:id="@id/w_asr_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <TextView android:id="@id/w_maghrib_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <TextView android:id="@id/w_isha_bar" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_fajr_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_shorook_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_dohr_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_asr_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_maghrib_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/w_isha_state" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/w_prayer_row" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip">
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_fajr_lbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sobh_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_fajr_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="--:--" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip">
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_dohr_lbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dohr_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_dohr_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="--:--" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip">
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_asr_lbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/asr_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_asr_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="--:--" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip">
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_maghrib_lbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/maghreb_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_maghrib_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="--:--" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip">
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_isha_lbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ichaa_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="center" android:id="@id/w_isha_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="--:--" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/white_opacity_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/w_date_lay" android:background="@color/white_33ffffff" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/w_shorook_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/w_shorook_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/sunrise_fill_white" />
+                <TextView android:enabled="false" android:textSize="15.0dip" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:id="@id/w_shorook_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shorook_short" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+                <TextView android:enabled="false" android:textSize="15.0dip" android:textColor="@android:color/darker_gray" android:id="@id/w_shorook_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="--:--" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/w_city_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layoutDirection="ltr">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/pin_white" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="right" android:id="@id/w_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_regular" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/w_menu_dots" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/widget_dots_gray" />
+            <ProgressBar android:id="@id/w_menu_dots_gray_pb" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/widget_dots_gray_anim" />
+            <ProgressBar android:id="@id/w_menu_dots_white_pb" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/widget_dots_white_anim" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="right" android:id="@id/w_menu" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+</FrameLayout>

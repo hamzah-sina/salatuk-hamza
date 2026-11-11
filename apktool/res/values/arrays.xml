@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Theme1">
+        <item>@style/LightTheme1</item>
+        <item>@style/DarkTheme1</item>
+    </array>
+    <array name="Theme2">
+        <item>@style/LightTheme2</item>
+        <item>@style/DarkTheme2</item>
+    </array>
+    <array name="Theme3">
+        <item>@style/LightTheme3</item>
+        <item>@style/DarkTheme3</item>
+    </array>
+    <array name="ThemesArray">
+        <item>@array/Theme1</item>
+        <item>@array/Theme3</item>
+        <item>@array/Theme2</item>
+    </array>
+    <string-array name="adhan_files_standard">
+        <item>haramayn/01/01</item>
+        <item>haramayn/02/02</item>
+        <item>standard/01/01</item>
+        <item>standard/02/02</item>
+        <item>maghrebi/01/01</item>
+        <item>maghrebi/02/02</item>
+    </string-array>
+    <string-array name="adhan_titles">
+        <item>Athan Makkah</item>
+        <item>Athan Madina</item>
+        <item>Salatuk Athan - Oriental style 1</item>
+        <item>Salatuk Athan - Oriental style 2</item>
+        <item>Salatuk Athan - Maghreb style 1</item>
+        <item>Salatuk Athan - Maghreb style 2</item>
+    </string-array>
+    <string-array name="app_supported_languages">
+        <item>ar</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>in</item>
+        <item>tr</item>
+    </string-array>
+    <array name="clock1">
+        <item>@drawable/clock_bg_1</item>
+        <item>@drawable/clockwise_hours_1</item>
+        <item>@drawable/clockwise_minutes_1</item>
+        <item>@drawable/clockwise_seconds_1</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="clock10">
+        <item>@drawable/clock_bg_10</item>
+        <item>@drawable/clockwise_hours_10</item>
+        <item>@drawable/clockwise_minutes_10</item>
+        <item>@drawable/clockwise_seconds_dark_10</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="clock11">
+        <item>@drawable/clock_bg_11</item>
+        <item>@drawable/clockwise_hours_11</item>
+        <item>@drawable/clockwise_minutes_11</item>
+        <item>@drawable/clockwise_seconds_11</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="clock2">
+        <item>@drawable/clock_bg_2</item>
+        <item>@drawable/clockwise_hours_2</item>
+        <item>@drawable/clockwise_minutes_2</item>
+        <item>@drawable/clockwise_seconds_2</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="clock3">
+        <item>@drawable/clock_bg_3</item>
+        <item>@drawable/clockwise_hours_3</item>
+        <item>@drawable/clockwise_minutes_3</item>
+        <item>@drawable/clockwise_seconds_3</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="clock4">
+        <item>@drawable/clock_bg_4</item>
+        <item>@drawable/clockwise_hours_4</item>
+        <item>@drawable/clockwise_minutes_4</item>
+        <item>@drawable/clockwise_seconds_4</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="clock5">
+        <item>@drawable/clock_bg_5</item>
+        <item>@drawable/clockwise_hours_5</item>
+        <item>@drawable/clockwise_minutes_5</item>
+        <item>@drawable/clockwise_seconds_5</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="clock6">
+        <item>@drawable/clock_bg_6</item>
+        <item>@drawable/clockwise_hours_6</item>
+        <item>@drawable/clockwise_minutes_6</item>
+        <item>@drawable/clockwise_seconds_6</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="clock7">
+        <item>@drawable/clock_bg_7</item>
+        <item>@drawable/clockwise_hours_7</item>
+        <item>@drawable/clockwise_minutes_7</item>
+        <item>@drawable/clockwise_seconds_7</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="clock8">
+        <item>@drawable/clock_bg_8</item>
+        <item>@drawable/clockwise_hours_8</item>
+        <item>@drawable/clockwise_minutes_8</item>
+        <item>@drawable/clockwise_seconds_8</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="clock9">
+        <item>@drawable/clock_bg_9</item>
+        <item>@drawable/clockwise_hours_9</item>
+        <item>@drawable/clockwise_minutes_9</item>
+        <item>@drawable/clockwise_seconds_9</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="compass1">
+        <item>@drawable/compass_bg_1</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass10">
+        <item>@drawable/compass_bg_10</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass11">
+        <item>@drawable/compass_bg_11</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass2">
+        <item>@drawable/compass_bg_2</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass3">
+        <item>@drawable/compass_bg_3</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass4">
+        <item>@drawable/compass_bg_4</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass5">
+        <item>@drawable/compass_bg_5</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass6">
+        <item>@drawable/compass_bg_6</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass7">
+        <item>@drawable/compass_bg_7</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass8">
+        <item>@drawable/compass_bg_8</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <array name="compass9">
+        <item>@drawable/compass_bg_9</item>
+        <item>@drawable/compass_pointer_1</item>
+    </array>
+    <string-array name="continents_codes">
+        <item>AF</item>
+        <item>AS</item>
+        <item>EU</item>
+        <item>NA</item>
+        <item>OC</item>
+        <item>SA</item>
+        <item>AN</item>
+    </string-array>
+    <string-array name="countries_codes_exception">
+        <item>SA</item>
+        <item>YE</item>
+        <item>BH</item>
+        <item>BN</item>
+        <item>MM</item>
+        <item>KH</item>
+        <item>TL</item>
+        <item>ID</item>
+        <item>LA</item>
+        <item>MY</item>
+        <item>PH</item>
+        <item>SG</item>
+        <item>TH</item>
+        <item>VN</item>
+        <item>IR</item>
+        <item>MA</item>
+        <item>DZ</item>
+        <item>TN</item>
+        <item>FR</item>
+        <item>TR</item>
+        <item>OM</item>
+        <item>AE</item>
+        <item>JO</item>
+        <item>KW</item>
+        <item>QA</item>
+        <item>LY</item>
+        <item>SY</item>
+        <item>IQ</item>
+        <item>LB</item>
+        <item>AL</item>
+        <item>AF</item>
+        <item>PK</item>
+        <item>KZ</item>
+        <item>TM</item>
+        <item>KG</item>
+        <item>TJ</item>
+        <item>AZ</item>
+        <item>BD</item>
+        <item>MV</item>
+        <item>IN</item>
+        <item>GB</item>
+        <item>UK</item>
+        <item>DE</item>
+        <item>CA</item>
+        <item>CZ</item>
+        <item>CH</item>
+        <item>PS</item>
+        <item>SD</item>
+        <item>BE</item>
+        <item>RU</item>
+        <item>AT</item>
+        <item>LU</item>
+    </string-array>
+    <string-array name="countries_hanafi">
+        <item>AL</item>
+        <item>AF</item>
+        <item>PK</item>
+        <item>KZ</item>
+        <item>TM</item>
+        <item>KG</item>
+        <item>TJ</item>
+        <item>AZ</item>
+        <item>BD</item>
+        <item>GB</item>
+        <item>UK</item>
+    </string-array>
+    <string-array name="countries_not_maliki_exceptions">
+        <item>EG</item>
+        <item>SD</item>
+        <item>SS</item>
+        <item>SO</item>
+        <item>DJ</item>
+    </string-array>
+    <array name="darkClock1">
+        <item>@drawable/clock_bg_dark_1</item>
+        <item>@drawable/clockwise_hours_dark_1</item>
+        <item>@drawable/clockwise_minutes_dark_1</item>
+        <item>@drawable/clockwise_seconds_dark_1</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="darkClock10">
+        <item>@drawable/clock_bg_dark_10</item>
+        <item>@drawable/clockwise_hours_dark_10</item>
+        <item>@drawable/clockwise_minutes_dark_10</item>
+        <item>@drawable/clockwise_seconds_dark_10</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock11">
+        <item>@drawable/clock_bg_dark_11</item>
+        <item>@drawable/clockwise_hours_dark_11</item>
+        <item>@drawable/clockwise_minutes_dark_11</item>
+        <item>@drawable/clockwise_seconds_11</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock2">
+        <item>@drawable/clock_bg_dark_2</item>
+        <item>@drawable/clockwise_hours_dark_2</item>
+        <item>@drawable/clockwise_minutes_dark_2</item>
+        <item>@drawable/clockwise_seconds_2</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="darkClock3">
+        <item>@drawable/clock_bg_dark_3</item>
+        <item>@drawable/clockwise_hours_dark_3</item>
+        <item>@drawable/clockwise_minutes_dark_3</item>
+        <item>@drawable/clockwise_seconds_3</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="darkClock4">
+        <item>@drawable/clock_bg_dark_4</item>
+        <item>@drawable/clockwise_hours_dark_4</item>
+        <item>@drawable/clockwise_minutes_dark_4</item>
+        <item>@drawable/clockwise_seconds_4</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock5">
+        <item>@drawable/clock_bg_dark_5</item>
+        <item>@drawable/clockwise_hours_dark_5</item>
+        <item>@drawable/clockwise_minutes_dark_5</item>
+        <item>@drawable/clockwise_seconds_dark_5</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock6">
+        <item>@drawable/clock_bg_6</item>
+        <item>@drawable/clockwise_hours_dark_6</item>
+        <item>@drawable/clockwise_minutes_dark_6</item>
+        <item>@drawable/clockwise_seconds_6</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock7">
+        <item>@drawable/clock_bg_dark_7</item>
+        <item>@drawable/clockwise_hours_dark_7</item>
+        <item>@drawable/clockwise_minutes_dark_7</item>
+        <item>@drawable/clockwise_seconds_dark_7</item>
+        <item>@color/theme_3_clock_elapsed_time_color</item>
+        <item>@color/theme_3_clock_remaining_time_color</item>
+    </array>
+    <array name="darkClock8">
+        <item>@drawable/clock_bg_8</item>
+        <item>@drawable/clockwise_hours_dark_2</item>
+        <item>@drawable/clockwise_minutes_dark_2</item>
+        <item>@drawable/clockwise_seconds_8</item>
+        <item>@color/arc_clock</item>
+        <item>@color/nav_bottom_color_selected</item>
+    </array>
+    <array name="darkClock9">
+        <item>@drawable/clock_bg_dark_9</item>
+        <item>@drawable/clockwise_hours_dark_9</item>
+        <item>@drawable/clockwise_minutes_dark_9</item>
+        <item>@drawable/clockwise_seconds_dark_9</item>
+        <item>@color/theme_2_clock_elapsed_time_color</item>
+        <item>@color/theme_2_clock_remaining_time_color</item>
+    </array>
+    <array name="darkCompass1">
+        <item>@drawable/compass_bg_dark_1</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass10">
+        <item>@drawable/compass_bg_dark_10</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass11">
+        <item>@drawable/compass_bg_dark_11</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass2">
+        <item>@drawable/compass_bg_dark_2</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass3">
+        <item>@drawable/compass_bg_dark_3</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass4">
+        <item>@drawable/compass_bg_dark_4</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass5">
+        <item>@drawable/compass_bg_dark_5</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass6">
+        <item>@drawable/compass_bg_dark_6</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass7">
+        <item>@drawable/compass_bg_dark_7</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass8">
+        <item>@drawable/compass_bg_8</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <array name="darkCompass9">
+        <item>@drawable/compass_bg_dark_9</item>
+        <item>@drawable/compass_pointer_dark_1</item>
+    </array>
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="days_first_letter">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="dialogAbout_msg">
+        <item>Salatuk is your prayers companion.</item>
+        <item>By locating you automatically, it gives you the appropriate prayer times as well as the direction of the Qibla.</item>
+        <item>The Salatuk algorithm supports a large calculation methods adopted by many Muslim countries. Depending on your location, the application choose the appropriate calculation method, Fiqhi school and Athan.</item>
+        <item>However, if you want, you can also change this manually in the Settings tab.</item>
+        <item>For an accurate location, you must ensure that your location settings and your Internet connection or your GPS are enabled !</item>
+        <item>Contact us :</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Become a friend of Salatuk on Facebook :</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>Salatuk on Twitter :</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="dialogFeatures_msg">
+        <item>New Features:</item>
+        <item>- Dark mode adjustments.</item>
+        <item>- Timing adjustments for various countries.</item>
+        <item>"
+"</item>
+        <item>For any request contact us:</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Follow us on facebook</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>And Twitter</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="gregorian_days_first_letter">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="hijri_offset_entries">
+        <item>+2</item>
+        <item>+1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="hijri_offset_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="masarat_app_1">
+        <item>SUMOO</item>
+        <item>https://play.google.com/store/apps/details?id=com.masaratapp.math.puzzle.game.sumoo</item>
+        <item>sumoo</item>
+    </string-array>
+    <string-array name="masarat_app_2">
+        <item>Feelic</item>
+        <item>https://play.google.com/store/apps/details?id=com.masaratapp.feelic</item>
+        <item>feelic</item>
+    </string-array>
+    <string-array name="masarat_app_3">
+        <item>Kids Arabic Alphabet Oasis</item>
+        <item>https://play.google.com/store/apps/details?id=com.masaratapp.arabicalphabet</item>
+        <item>wahathorof</item>
+    </string-array>
+    <array name="masarat_apps">
+        <item>@array/masarat_app_3</item>
+        <item>@array/masarat_app_1</item>
+        <item>@array/masarat_app_2</item>
+    </array>
+    <string-array name="months_hijri">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabia al-awwal</item>
+        <item>Rabia al-thani</item>
+        <item>Jumada al-awwal</item>
+        <item>Jumada al-thani</item>
+        <item>Rajab</item>
+        <item>Shaaban</item>
+        <item>Ramadan</item>
+        <item>Shawwal</item>
+        <item>Dhu al-Qiedah</item>
+        <item>Dhu al-Hijjah</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="months_miladi_iq_sy_jo_lb_ps">
+        <item>كانون الثاني</item>
+        <item>شباط</item>
+        <item>آذار</item>
+        <item>نيسان</item>
+        <item>أيار</item>
+        <item>حزيران</item>
+        <item>تموز</item>
+        <item>آب</item>
+        <item>أيلول</item>
+        <item>تشرين الأول</item>
+        <item>تشرين الثاني</item>
+        <item>كانون الأول</item>
+    </string-array>
+    <string-array name="months_miladi_ma">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>ماي</item>
+        <item>يونيو</item>
+        <item>يوليوز</item>
+        <item>غشت</item>
+        <item>شتنبر</item>
+        <item>أكتوبر</item>
+        <item>نونبر</item>
+        <item>دجنبر</item>
+    </string-array>
+    <string-array name="months_miladi_tn_dz">
+        <item>جانفي</item>
+        <item>فيفري</item>
+        <item>مارس</item>
+        <item>أفريل</item>
+        <item>ماي</item>
+        <item>جوان</item>
+        <item>جويلية</item>
+        <item>أوت</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+    <string-array name="prayer_calc_methods">
+        <item>egypt</item>
+        <item>mwl</item>
+        <item>mwl</item>
+        <item>isna</item>
+        <item>mwl</item>
+        <item>isna</item>
+        <item>isna</item>
+    </string-array>
+    <string-array name="prayer_calc_methods_exception">
+        <item>makkah</item>
+        <item>makkah</item>
+        <item>makkah</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>malaysia</item>
+        <item>mwl</item>
+        <item>morocco</item>
+        <item>algeria</item>
+        <item>tunisia</item>
+        <item>uoif</item>
+        <item>turkey</item>
+        <item>oman</item>
+        <item>emirates</item>
+        <item>jordan</item>
+        <item>kuwait</item>
+        <item>qatar</item>
+        <item>libya</item>
+        <item>syria</item>
+        <item>egypt</item>
+        <item>egypt</item>
+        <item>karachi</item>
+        <item>karachi</item>
+        <item>karachi</item>
+        <item>kazakhstan</item>
+        <item>karachi</item>
+        <item>karachi</item>
+        <item>tajikistan</item>
+        <item>karachi</item>
+        <item>karachi</item>
+        <item>maldives</item>
+        <item>karachi</item>
+        <item>mwl</item>
+        <item>mwl</item>
+        <item>mwl</item>
+        <item>isna</item>
+        <item>czech</item>
+        <item>switzerland</item>
+        <item>palestine</item>
+        <item>sudan</item>
+        <item>belgium</item>
+        <item>mwl</item>
+        <item>mwl</item>
+        <item>luxembourg</item>
+    </string-array>
+    <string-array name="prayers_adhans_text">
+        <item>Fajr Athan</item>
+        <item>Sunrise</item>
+        <item>Dhuhr Athan</item>
+        <item>Asr Athan</item>
+        <item>Maghrib Athan</item>
+        <item>Ishaa Athan</item>
+        <item>"Jumu'ah Athan"</item>
+    </string-array>
+    <string-array name="pt_calcMethod_entries">
+        <item>Egyptian General Survey Authority</item>
+        <item>Islamic Society of North America (ISNA)</item>
+        <item>Muslim World League (MWL)</item>
+        <item>Umm al-Qura, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Algeria, Ministry of Religious Affairs and Endowments</item>
+        <item>Asia, Method of Southeast Asian Countries</item>
+        <item>Austria, Islamic Center Vienna</item>
+        <item>Belgium, Islamic and Cultural Center of Belgium</item>
+        <item>Canada, Islamic Information Society of Calgary</item>
+        <item>Canada, Mississauga ISNA-Canada</item>
+        <item>Canada, Montreal, The Islamic Centre of Quebec</item>
+        <item>Canada, Windsor Islamic Association</item>
+        <item>Czech Republic</item>
+        <item>France, Advisory Board of Imams of Orleans</item>
+        <item>France, Grand Mosque of Lyon</item>
+        <item>France, Grand Mosque of Paris</item>
+        <item>France, Mirail Mosque in Toulouse</item>
+        <item>France, Union of Islamic Organizations of France</item>
+        <item>Germany, Germany-Nuremberg Islamic community</item>
+        <item>Germany, Islamic Center of Aachen</item>
+        <item>Germany, Islamic Center of Munich</item>
+        <item>Iraq, Sunni Endowment Diwan</item>
+        <item>Jordan, Ministry of Awqaf, Islamic Affairs and Holy Places</item>
+        <item>Kazakhstan, Kostanay Regional Mosque</item>
+        <item>Kuwait, Ministry of Awqaf and Islamic Affairs</item>
+        <item>Libya, Ministry of Endowments and Islamic Affairs</item>
+        <item>Luxembourg, Islamic Cultural Center of the Grand Duchy of Luxembourg</item>
+        <item>Malasyia, Malaysian Islamic Development Department</item>
+        <item>Maldives, Ministry of Islamic Affairs</item>
+        <item>Morocco, Ministry of Endowments and Islamic Affairs</item>
+        <item>Oman, Ministry of Endowments and Religious Affairs</item>
+        <item>Palestine, The Ministry of Awqaf and Religious Affairs</item>
+        <item>Qatar Calendar House</item>
+        <item>Russia mufties Council</item>
+        <item>Sudan, The Ministry of Endowments and Guidance</item>
+        <item>Switzerland, Islamic Center of Geneva</item>
+        <item>Syria, Hashemi Calendar</item>
+        <item>Tajikistan, Islamic Centre Of Republic Of Tajikistan</item>
+        <item>Tunisia, Ministry of Religious Affairs</item>
+        <item>Turkey, Presidency of Religious Affairs</item>
+        <item>United Arab Emirates, Department of Islamic Affairs and Charitable Activities-Dubai</item>
+        <item>United Arab Emirates, General Authority Of Islamic Affairs and Endowments</item>
+        <item>United Kingdom, Birmingham Central Mosque</item>
+        <item>United Kingdom, Islamic Culture Center of Blackburn</item>
+        <item>United Kingdom, London Central Mosque</item>
+    </string-array>
+    <string-array name="pt_calcMethod_values">
+        <item>egypt</item>
+        <item>isna</item>
+        <item>mwl</item>
+        <item>makkah</item>
+        <item>karachi</item>
+        <item>algeria</item>
+        <item>malaysia</item>
+        <item>austria</item>
+        <item>belgium</item>
+        <item>calgary</item>
+        <item>mississauga</item>
+        <item>montreal</item>
+        <item>windsor</item>
+        <item>czech</item>
+        <item>orleans</item>
+        <item>lyon</item>
+        <item>paris</item>
+        <item>toulouse</item>
+        <item>uoif</item>
+        <item>nurnberg</item>
+        <item>aachen</item>
+        <item>munchen</item>
+        <item>iraq</item>
+        <item>jordan</item>
+        <item>kazakhstan</item>
+        <item>kuwait</item>
+        <item>libya</item>
+        <item>luxembourg</item>
+        <item>malaysia</item>
+        <item>maldives</item>
+        <item>morocco</item>
+        <item>oman</item>
+        <item>palestine</item>
+        <item>qatar</item>
+        <item>moscow</item>
+        <item>sudan</item>
+        <item>switzerland</item>
+        <item>syria</item>
+        <item>tajikistan</item>
+        <item>tunisia</item>
+        <item>turkey</item>
+        <item>dubai</item>
+        <item>emirates</item>
+        <item>birmingham</item>
+        <item>blackburn</item>
+        <item>london</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_entries">
+        <item>None</item>
+        <item>Middle of the Night Method</item>
+        <item>One-Seventh of the Night Method</item>
+        <item>Angle-Based Method</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_entries">
+        <item>Shafii/Maliki/Hanbali</item>
+        <item>Hanafi</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="reminder_files">
+        <item>reminders/02_default_shahada.m4a</item>
+        <item>reminders/03_default_7ay3alaSalah.m4a</item>
+        <item>reminders/05_makkah_shahada.m4a</item>
+        <item>reminders/06_makkah_7ay3alaSalah.m4a</item>
+        <item>reminders/iqama_haram_full.ogg</item>
+        <item>reminders/iqama_haram_short.ogg</item>
+        <item>reminders/08_madina_shahada.m4a</item>
+        <item>reminders/09_madina_7ay3alaSalah.m4a</item>
+        <item>reminders/iqama_nabwai_full.ogg</item>
+        <item>reminders/iqama_nabawi_short.ogg</item>
+        <item>reminders/13_bird_1.m4a</item>
+        <item>reminders/14_bird_2.m4a</item>
+        <item>reminders/15_bird_3.m4a</item>
+        <item>reminders/16_ringtone.m4a</item>
+        <item>reminders/17_bird_long_1.ogg</item>
+        <item>reminders/18_bird_long_2.ogg</item>
+        <item>reminders/19_bird_long_3.ogg</item>
+        <item>reminders/20_ringtone_long.ogg</item>
+    </string-array>
+    <string-array name="reminder_sounds_titles">
+        <item>Default Shahada</item>
+        <item>Default Hayya Ala Salah</item>
+        <item>Shahada - Makkah</item>
+        <item>Hayya Ala Salah - Makkah</item>
+        <item>Iqama, Complete - Makkah</item>
+        <item>Iqama, Short - Makkah</item>
+        <item>Shahada - Madina</item>
+        <item>Hayya Ala Salah - Madina</item>
+        <item>Iqama, Complete - Madina</item>
+        <item>Iqama, Short - Madina</item>
+        <item>Bird 1</item>
+        <item>Bird 2</item>
+        <item>Bird 3</item>
+        <item>Ringtone</item>
+        <item>Long Bird 1</item>
+        <item>Long Bird 2</item>
+        <item>Long Bird 3</item>
+        <item>Long Ringtone</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_entries">
+        <item>Popup Window</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_values">
+        <item>popup</item>
+        <item>notification</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_entries">
+        <item>Use ring volume</item>
+        <item>Use media volume</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_values">
+        <item>ring</item>
+        <item>media</item>
+    </string-array>
+    <string-array name="s_calendar_availability_entries">
+        <item>Busy</item>
+        <item>Available</item>
+    </string-array>
+    <string-array name="s_calendar_availability_values">
+        <item>opaque</item>
+        <item>transparent</item>
+    </string-array>
+    <string-array name="s_calendar_days_entries">
+        <item>7 days</item>
+        <item>15 days</item>
+    </string-array>
+    <string-array name="s_calendar_days_values">
+        <item>7</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="silent_asr_default">
+        <item>0</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="silent_asr_values">
+        <item>-60</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="silent_dohr_default">
+        <item>0</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="silent_dohr_values">
+        <item>-60</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="silent_fajr_default">
+        <item>0</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="silent_fajr_values">
+        <item>-60</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="silent_ichaa_default">
+        <item>0</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="silent_ichaa_values">
+        <item>-60</item>
+        <item>30</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="silent_jumuaa_default">
+        <item>0</item>
+        <item>90</item>
+    </string-array>
+    <string-array name="silent_jumuaa_values">
+        <item>-90</item>
+        <item>40</item>
+        <item>120</item>
+    </string-array>
+    <string-array name="silent_maghreb_default">
+        <item>0</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="silent_maghreb_values">
+        <item>-60</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="silent_notif_Entries">
+        <item>No Notification</item>
+        <item>Vibrate only</item>
+        <item>Sound without vibrate</item>
+        <item>Sound with vibrate</item>
+    </string-array>
+    <string-array name="silent_notif_Values">
+        <item>silent</item>
+        <item>vibrate</item>
+        <item>sound</item>
+        <item>sound_vibrate</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Entries">
+        <item>No Notification</item>
+        <item>Vibrate only</item>
+        <item>Sound without vibrate</item>
+        <item>Sound with vibrate</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Values">
+        <item>silent</item>
+        <item>vibrate</item>
+        <item>sound</item>
+        <item>sound_vibrate</item>
+    </string-array>
+    <array name="theme_1_clocks">
+        <item>@array/clock2</item>
+        <item>@array/clock1</item>
+        <item>@array/clock3</item>
+        <item>@array/clock8</item>
+    </array>
+    <array name="theme_1_clocks_thumbnails">
+        <item>@drawable/clock_thumb_2</item>
+        <item>@drawable/clock_thumb_1</item>
+        <item>@drawable/clock_thumb_3</item>
+        <item>@drawable/clock_thumb_8</item>
+    </array>
+    <array name="theme_1_compass_list">
+        <item>@array/compass2</item>
+        <item>@array/compass1</item>
+        <item>@array/compass3</item>
+        <item>@array/compass8</item>
+    </array>
+    <array name="theme_2_clocks">
+        <item>@array/clock4</item>
+        <item>@array/clock9</item>
+        <item>@array/clock10</item>
+        <item>@array/clock11</item>
+    </array>
+    <array name="theme_2_clocks_thumbnails">
+        <item>@drawable/clock_thumb_4</item>
+        <item>@drawable/clock_thumb_9</item>
+        <item>@drawable/clock_thumb_10</item>
+        <item>@drawable/clock_thumb_11</item>
+    </array>
+    <array name="theme_2_compass_list">
+        <item>@array/compass4</item>
+        <item>@array/compass9</item>
+        <item>@array/compass10</item>
+        <item>@array/compass11</item>
+    </array>
+    <array name="theme_3_clocks">
+        <item>@array/clock5</item>
+        <item>@array/clock6</item>
+        <item>@array/clock7</item>
+        <item>@array/clock8</item>
+    </array>
+    <array name="theme_3_clocks_thumbnails">
+        <item>@drawable/clock_thumb_5</item>
+        <item>@drawable/clock_thumb_6</item>
+        <item>@drawable/clock_thumb_7</item>
+        <item>@drawable/clock_thumb_8</item>
+    </array>
+    <array name="theme_3_compass_list">
+        <item>@array/compass5</item>
+        <item>@array/compass6</item>
+        <item>@array/compass7</item>
+        <item>@array/compass8</item>
+    </array>
+    <array name="theme_dark_1_clocks">
+        <item>@array/darkClock2</item>
+        <item>@array/darkClock1</item>
+        <item>@array/darkClock3</item>
+        <item>@array/darkClock8</item>
+    </array>
+    <array name="theme_dark_1_clocks_thumbnails">
+        <item>@drawable/clock_thumb_2</item>
+        <item>@drawable/clock_thumb_1</item>
+        <item>@drawable/clock_thumb_3</item>
+        <item>@drawable/clock_thumb_8</item>
+    </array>
+    <array name="theme_dark_1_compass_list">
+        <item>@array/darkCompass2</item>
+        <item>@array/darkCompass1</item>
+        <item>@array/darkCompass3</item>
+        <item>@array/darkCompass8</item>
+    </array>
+    <array name="theme_dark_2_clocks">
+        <item>@array/darkClock4</item>
+        <item>@array/darkClock9</item>
+        <item>@array/darkClock10</item>
+        <item>@array/darkClock11</item>
+    </array>
+    <array name="theme_dark_2_clocks_thumbnails">
+        <item>@drawable/clock_thumb_dark_4</item>
+        <item>@drawable/clock_thumb_dark_9</item>
+        <item>@drawable/clock_thumb_dark_10</item>
+        <item>@drawable/clock_thumb_dark_11</item>
+    </array>
+    <array name="theme_dark_2_compass_list">
+        <item>@array/darkCompass4</item>
+        <item>@array/darkCompass9</item>
+        <item>@array/darkCompass10</item>
+        <item>@array/darkCompass11</item>
+    </array>
+    <array name="theme_dark_3_clocks">
+        <item>@array/darkClock5</item>
+        <item>@array/darkClock6</item>
+        <item>@array/darkClock7</item>
+        <item>@array/darkClock8</item>
+    </array>
+    <array name="theme_dark_3_clocks_thumbnails">
+        <item>@drawable/clock_thumb_dark_5</item>
+        <item>@drawable/clock_thumb_dark_6</item>
+        <item>@drawable/clock_thumb_dark_7</item>
+        <item>@drawable/clock_thumb_8</item>
+    </array>
+    <array name="theme_dark_3_compass_list">
+        <item>@array/darkCompass5</item>
+        <item>@array/darkCompass6</item>
+        <item>@array/darkCompass7</item>
+        <item>@array/darkCompass8</item>
+    </array>
+    <string-array name="time_format_entries">
+        <item>Automatic (Based on phone settings)</item>
+        <item>Use 12-hour format (1:00 pm)</item>
+        <item>Use 24-hour format (13:00)</item>
+    </string-array>
+    <string-array name="time_format_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="time_unites">
+        <item>minutes</item>
+        <item>hours</item>
+    </string-array>
+    <string-array name="time_utc_offset_entries">
+        <item>UTC−12:00</item>
+        <item>UTC−11:00</item>
+        <item>UTC−10:00</item>
+        <item>UTC−09:30</item>
+        <item>UTC−09:00</item>
+        <item>UTC−08:00</item>
+        <item>UTC−07:00</item>
+        <item>UTC−06:00</item>
+        <item>UTC−05:00</item>
+        <item>UTC−04:00</item>
+        <item>UTC−03:30</item>
+        <item>UTC−03:00</item>
+        <item>UTC−02:00</item>
+        <item>UTC−01:00</item>
+        <item>UTC±00:00</item>
+        <item>UTC+01:00</item>
+        <item>UTC+02:00</item>
+        <item>UTC+03:00</item>
+        <item>UTC+03:30</item>
+        <item>UTC+04:00</item>
+        <item>UTC+04:30</item>
+        <item>UTC+05:00</item>
+        <item>UTC+05:30</item>
+        <item>UTC+05:45</item>
+        <item>UTC+06:00</item>
+        <item>UTC+06:30</item>
+        <item>UTC+07:00</item>
+        <item>UTC+08:00</item>
+        <item>UTC+08:45</item>
+        <item>UTC+09:00</item>
+        <item>UTC+09:30</item>
+        <item>UTC+10:00</item>
+        <item>UTC+10:30</item>
+        <item>UTC+11:00</item>
+        <item>UTC+12:00</item>
+        <item>UTC+12:45</item>
+        <item>UTC+13:00</item>
+        <item>UTC+14:00</item>
+    </string-array>
+    <string-array name="time_utc_offset_values">
+        <item>-12:00</item>
+        <item>-11:00</item>
+        <item>-10:00</item>
+        <item>-09:30</item>
+        <item>-09:00</item>
+        <item>-08:00</item>
+        <item>-07:00</item>
+        <item>-06:00</item>
+        <item>-05:00</item>
+        <item>-04:00</item>
+        <item>-03:30</item>
+        <item>-03:00</item>
+        <item>-02:00</item>
+        <item>-01:00</item>
+        <item>00:00</item>
+        <item>+01:00</item>
+        <item>+02:00</item>
+        <item>+03:00</item>
+        <item>+03:30</item>
+        <item>+04:00</item>
+        <item>+04:30</item>
+        <item>+05:00</item>
+        <item>+05:30</item>
+        <item>+05:45</item>
+        <item>+06:00</item>
+        <item>+06:30</item>
+        <item>+07:00</item>
+        <item>+08:00</item>
+        <item>+08:45</item>
+        <item>+09:00</item>
+        <item>+09:30</item>
+        <item>+10:00</item>
+        <item>+10:30</item>
+        <item>+11:00</item>
+        <item>+12:00</item>
+        <item>+12:45</item>
+        <item>+13:00</item>
+        <item>+14:00</item>
+    </string-array>
+    <string-array name="travel_mode_duration_entries">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>1.5 h</item>
+        <item>2 h</item>
+        <item>3 h</item>
+        <item>4 h</item>
+    </string-array>
+    <string-array name="travel_mode_duration_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+    </string-array>
+    <string-array name="vibration_type_Entries">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+        <item>Very long</item>
+    </string-array>
+    <string-array name="vibration_type_Values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

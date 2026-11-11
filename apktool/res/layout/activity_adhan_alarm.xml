@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/adhan_alarm_activity_container" android:background="@drawable/adhan_alarm_bg_anim_list_dohr" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/adhan_alarm_title_txv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adhan_alarm_title_txv">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="@dimen/_160sdp" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/ic_myspin_salatuk_logo" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/white_opacity_70" android:gravity="center" android:id="@id/adhan_alarm_content_txv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/adhan_alarm_title_txv" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_below="@id/adhan_alarm_content_txv">
+            <com.masarat.salati.util.ripple.RippleBackground android:id="@id/adhan_alarm_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" app:rb_color="@color/black_6f000000" app:rb_duration="3000" app:rb_radius="@dimen/_35sdp" app:rb_rippleAmount="3" app:rb_scale="2.5">
+                <com.masarat.salati.ui.views.SwipeButtonView android:textSize="20.0sp" android:gravity="center" android:layout_gravity="start|bottom|center" android:id="@id/adhan_alarm_cancel_txv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <View android:background="@drawable/adhan_alarm_stroke" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:layout_centerInParent="true" />
+            </com.masarat.salati.util.ripple.RippleBackground>
+            <com.masarat.salati.util.ripple.RippleBackground android:id="@id/adhan_alarm_share" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" app:rb_color="#bf149ac8" app:rb_duration="3000" app:rb_radius="@dimen/_35sdp" app:rb_rippleAmount="3" app:rb_scale="2.5" app:rb_type="fillRipple">
+                <com.masarat.salati.ui.views.SwipeButtonView android:textSize="20.0sp" android:gravity="center" android:layout_gravity="start|bottom|center" android:id="@id/adhan_alarm_share_txv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <View android:background="@drawable/adhan_alarm_stroke" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:layout_centerInParent="true" />
+            </com.masarat.salati.util.ripple.RippleBackground>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adhan_tvMin_textSize">15.0sp</dimen>
+    <dimen name="clock_time_textSize">21.0sp</dimen>
+    <dimen name="qibla_city_marginB">7.0dip</dimen>
+    <dimen name="qibla_city_textSize">11.0sp</dimen>
+    <dimen name="w_city_textSize">11.0sp</dimen>
+    <dimen name="w_date_textSize">9.0sp</dimen>
+    <dimen name="w_plus_moins_textSize">22.0sp</dimen>
+    <dimen name="w_prayer_bigName_textSize">18.0sp</dimen>
+    <dimen name="w_prayer_n_t_textSize">11.0sp</dimen>
+</resources>

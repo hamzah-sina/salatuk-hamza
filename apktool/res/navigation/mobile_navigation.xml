@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/navigation_home"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/title_home" android:name="com.masarat.salati.ui.fragments.home.HomeFragment" android:id="@id/navigation_home" />
+    <fragment android:label="@string/title_prayers" android:name="com.masarat.salati.ui.fragments.prayers.PrayersFragment" android:id="@id/navigation_prayers" />
+    <fragment android:label="@string/title_reminders" android:name="com.masarat.salati.ui.fragments.reminders.RemindersFragment" android:id="@id/navigation_reminders" />
+    <fragment android:label="World cities" android:name="com.masarat.salati.ui.fragments.worldcities.WorldCitiesFragment" android:id="@id/navigation_world_cities" />
+    <activity android:label="@string/title_qibla" android:name="com.masarat.salati.ui.activities.QiblaActivity" android:id="@id/navigation_qibla" />
+</navigation>

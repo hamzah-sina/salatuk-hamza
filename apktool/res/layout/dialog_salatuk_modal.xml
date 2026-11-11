@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/modal_card" android:background="@drawable/bg_modal_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="20.0dip" android:paddingEnd="52.0dip">
+            <FrameLayout android:background="@drawable/bg_modal_accent_panel" android:layout_width="40.0dip" android:layout_height="40.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/modal_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_battery_unrestricted" app:tint="?colorAccent" />
+            </FrameLayout>
+            <com.masarat.salati.ui.views.SalatukTextView android:textSize="@dimen/_16ssp" android:textColor="?textColor" android:id="@id/modal_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingMultiplier="1.05" android:textAlignment="viewStart" android:layout_marginStart="12.0dip" app:fontName="Rubik" app:style="Bold" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="end|center|top" android:id="@id/modal_close" android:background="@drawable/bg_modal_close" android:padding="9.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="6.0dip" android:scaleType="fitCenter" android:contentDescription="@string/modal_close" android:layout_marginEnd="6.0dip" app:srcCompat="@drawable/ic_close" app:tint="?modalQuietTextColor" />
+    </FrameLayout>
+    <ScrollView android:id="@id/modal_scroll" android:scrollbars="vertical" android:fadingEdgeLength="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:layout_weight="1.0" android:fadeScrollbars="true" android:requiresFadingEdge="vertical">
+        <FrameLayout android:id="@id/modal_content" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+    </ScrollView>
+    <View android:id="@id/modal_footer_divider" android:background="?modalPanelStroke" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/modal_footer" android:background="?modalPanelSurface" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+</LinearLayout>

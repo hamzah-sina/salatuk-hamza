@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adhan_titles">
+        <item>Adzan Makkah</item>
+        <item>Adzan Madina</item>
+        <item>Salatuk Adzan - gaya Oriental 1</item>
+        <item>Salatuk Adzan - gaya Oriental 2</item>
+        <item>Salatuk Adzan - gaya Maghreb 1</item>
+        <item>Salatuk Adzan - gaya Maghreb 2</item>
+    </string-array>
+    <string-array name="days">
+        <item>Ahad</item>
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+    </string-array>
+    <string-array name="dialogAbout_msg">
+        <item>Salatuk adalah pendamping salat Anda.</item>
+        <item>Dengan menentukan lokasi Anda secara otomatis, Salatuk memberitahukan Anda waktu salat secara tepat Anda dan juga menentukan arah Kiblat.</item>
+        <item>Algoritma Salatuk mendukung banyak metode hisab/perhitungan yang digunakan banyak negara Muslim. Bergantung dari lokasi Anda, aplikasi ini dapat memilih metode hisab, mazhab Fiqih dan Adzan yang sesuai.</item>
+        <item>Namun jika Anda ingin, Anda dapat mengubahnya secara manual di tombol Setingan.</item>
+        <item>Untuk mendapatkan lokalisasi yang akurat, Anda harus memastikan bahwa setingan lokasi Anda dan koneksi Internet atau GPS Anda sudah tersambung !</item>
+        <item>Kontak kami :</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Jadilah teman Salatuk di Facebook :</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>Salatuk di Twitter :</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="dialogFeatures_msg">
+        <item>New Features:</item>
+        <item>- Dark mode adjustments.</item>
+        <item>- Timing adjustments for various countries.</item>
+        <item>"
+"</item>
+        <item>For any request contact us:</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Follow us on facebook</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>And Twitter</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="months_hijri">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabiul awal</item>
+        <item>Rabiul akhir</item>
+        <item>Jumadil awal</item>
+        <item>Jumadil akhir</item>
+        <item>Rajab</item>
+        <item>"Sya'ban"</item>
+        <item>Ramadhan</item>
+        <item>Syawal</item>
+        <item>Dzul Qaidah</item>
+        <item>Dzul Hijjah</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="prayers_adhans_text">
+        <item>Subuh Adzan</item>
+        <item>Syuruq</item>
+        <item>Zuhur Adzan</item>
+        <item>Ashar Adzan</item>
+        <item>Magrib Adzan</item>
+        <item>Isya Adzan</item>
+        <item>"Jum'at Adzan"</item>
+    </string-array>
+    <string-array name="pt_calcMethod_entries">
+        <item>Egyptian General Survey Authority</item>
+        <item>Islamic Society of North America (ISNA)</item>
+        <item>Muslim World League (MWL)</item>
+        <item>Umm al-Qura, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Algeria, Ministry of Religious Affairs and Endowments</item>
+        <item>Asia, Method of Southeast Asian Countries</item>
+        <item>Austria, Islamic Center Vienna</item>
+        <item>Belgium, Islamic and Cultural Center of Belgium</item>
+        <item>Canada, Islamic Information Society of Calgary</item>
+        <item>Canada, Mississauga ISNA-Canada</item>
+        <item>Canada, Montreal, The Islamic Centre of Quebec</item>
+        <item>Canada, Windsor Islamic Association</item>
+        <item>Czech Republic</item>
+        <item>France, Advisory Board of Imams of Orleans</item>
+        <item>France, Grand Mosque of Lyon</item>
+        <item>France, Grand Mosque of Paris</item>
+        <item>France, Mirail Mosque in Toulouse</item>
+        <item>France, Union of Islamic Organizations of France</item>
+        <item>Germany, Germany-Nuremberg Islamic community</item>
+        <item>Germany, Islamic Center of Aachen</item>
+        <item>Germany, Islamic Center of Munich</item>
+        <item>Iraq, Sunni Endowment Diwan</item>
+        <item>Jordan, Ministry of Awqaf, Islamic Affairs and Holy Places</item>
+        <item>Kazakhstan, Kostanay Regional Mosque</item>
+        <item>Kuwait, Ministry of Awqaf and Islamic Affairs</item>
+        <item>Libya, Ministry of Endowments and Islamic Affairs</item>
+        <item>Luxembourg, Islamic Cultural Center of the Grand Duchy of Luxembourg</item>
+        <item>Malasyia, Malaysian Islamic Development Department</item>
+        <item>Maldives, Ministry of Islamic Affairs</item>
+        <item>Morocco, Ministry of Endowments and Islamic Affairs</item>
+        <item>Oman, Ministry of Endowments and Religious Affairs</item>
+        <item>Palestine, The Ministry of Awqaf and Religious Affairs</item>
+        <item>Qatar Calendar House</item>
+        <item>Russia mufties Council</item>
+        <item>Sudan, The Ministry of Endowments and Guidance</item>
+        <item>Switzerland,Islamic Center of Geneva</item>
+        <item>Syria, Hashemi Calendar</item>
+        <item>Tajikistan, Islamic Centre Of Republic Of Tajikistan</item>
+        <item>Tunisia, Ministry of Religious Affairs</item>
+        <item>Turkey, Presidency of Religious Affairs</item>
+        <item>United Arab Emirates, Department of Islamic Affairs and Charitable Activities-Dubai</item>
+        <item>United Arab Emirates, General Authority Of Islamic Affairs and Endowments</item>
+        <item>United Kingdom, Birmingham Central Mosque</item>
+        <item>United Kingdom, Islamic Culture Center of Blackburn</item>
+        <item>United Kingdom, London Central Mosque</item>
+    </string-array>
+    <string-array name="pt_calcMethod_values">
+        <item>egypt</item>
+        <item>isna</item>
+        <item>mwl</item>
+        <item>makkah</item>
+        <item>karachi</item>
+        <item>algeria</item>
+        <item>malaysia</item>
+        <item>austria</item>
+        <item>belgium</item>
+        <item>calgary</item>
+        <item>mississauga</item>
+        <item>montreal</item>
+        <item>windsor</item>
+        <item>czech</item>
+        <item>orleans</item>
+        <item>lyon</item>
+        <item>paris</item>
+        <item>toulouse</item>
+        <item>uoif</item>
+        <item>nurnberg</item>
+        <item>aachen</item>
+        <item>munchen</item>
+        <item>iraq</item>
+        <item>jordan</item>
+        <item>kazakhstan</item>
+        <item>kuwait</item>
+        <item>libya</item>
+        <item>luxembourg</item>
+        <item>malaysia</item>
+        <item>maldives</item>
+        <item>morocco</item>
+        <item>oman</item>
+        <item>palestine</item>
+        <item>qatar</item>
+        <item>moscow</item>
+        <item>sudan</item>
+        <item>switzerland</item>
+        <item>syria</item>
+        <item>tajikistan</item>
+        <item>tunisia</item>
+        <item>turkey</item>
+        <item>dubai</item>
+        <item>emirates</item>
+        <item>birmingham</item>
+        <item>blackburn</item>
+        <item>london</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_entries">
+        <item>None</item>
+        <item>Middle of the Night Method</item>
+        <item>One-Seventh of the Night Method</item>
+        <item>Angle-Based Method</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_entries">
+        <item>Syafii/Maliki/Hambali</item>
+        <item>Hanafi</item>
+    </string-array>
+    <string-array name="reminder_sounds_titles">
+        <item>Default Shahada</item>
+        <item>Default Hayya Ala Salah</item>
+        <item>Shahada - Makkah</item>
+        <item>Hayya Ala Salah - Makkah</item>
+        <item>Iqama Complete - Makkah</item>
+        <item>Iqama Short - Makkah</item>
+        <item>Shahada - Madina</item>
+        <item>Hayya Ala Salah - Madina</item>
+        <item>Iqama Complete - Madina</item>
+        <item>Iqama Short - Madina</item>
+        <item>Bird 1</item>
+        <item>Bird 2</item>
+        <item>Bird 3</item>
+        <item>Ringtone</item>
+        <item>Long Bird 1</item>
+        <item>Long Bird 2</item>
+        <item>Long Bird 3</item>
+        <item>Long Ringtone</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_entries">
+        <item>Popup Window</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_entries">
+        <item>Use ring volume</item>
+        <item>Use media volume</item>
+    </string-array>
+    <string-array name="s_calendar_availability_entries">
+        <item>Busy</item>
+        <item>Available</item>
+    </string-array>
+    <string-array name="s_calendar_days_entries">
+        <item>7 days</item>
+        <item>15 days</item>
+    </string-array>
+    <string-array name="silent_notif_Entries">
+        <item>Tanpa notifikasi</item>
+        <item>Hanya dengan getaran</item>
+        <item>Bunyi tanpa getaran</item>
+        <item>Bunyi dengan getaran</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Entries">
+        <item>No Notification</item>
+        <item>Vibrate only</item>
+        <item>Sound without vibrate</item>
+        <item>Sound with vibrate</item>
+    </string-array>
+    <string-array name="time_unites">
+        <item>menit</item>
+        <item>jam</item>
+    </string-array>
+    <string-array name="travel_mode_duration_entries">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>1.5 h</item>
+        <item>2 h</item>
+        <item>3 h</item>
+        <item>4 h</item>
+    </string-array>
+    <string-array name="vibration_type_Entries">
+        <item>Pendek</item>
+        <item>Medium</item>
+        <item>Panjang</item>
+        <item>Sangat panjang</item>
+    </string-array>
+</resources>

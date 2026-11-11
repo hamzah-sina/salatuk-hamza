@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="2.0dip">
+        <bitmap android:gravity="bottom" android:src="@drawable/ic_event_dot" android:tint="@color/special_date_color" android:tintMode="src_in"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </item>
+</layer-list>

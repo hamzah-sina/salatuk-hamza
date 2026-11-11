@@ -1,0 +1,60 @@
+package f5;
+
+import android.content.DialogInterface;
+import com.masarat.salati.WorkManager.PriereWorker;
+import com.masarat.salati.preferences.SilentPreferences;
+import f2.r;
+import java.util.HashMap;
+import l2.m;
+import l2.o;
+
+/* compiled from: r8-map-id-1f7525fce23a77ca5737cc01c4781c5fea0585ef334e56cbf05e29f39fb88622 */
+/* loaded from: classes.dex */
+public final class f implements DialogInterface.OnClickListener {
+    public final /* synthetic */ int c;
+
+    /* renamed from: o, reason: collision with root package name */
+    public final /* synthetic */ SilentPreferences f٢٧٣٦o;
+
+    public /* synthetic */ f(SilentPreferences silentPreferences, int i8) {
+        this.c = i8;
+        this.f٢٧٣٦o = silentPreferences;
+    }
+
+    @Override // android.content.DialogInterface.OnClickListener
+    public final void onClick(DialogInterface dialogInterface, int i8) throws Throwable {
+        switch (this.c) {
+            case 0:
+                SilentPreferences silentPreferences = this.f٢٧٣٦o;
+                int iG = SilentPreferences.g(silentPreferences, "silent_dohr", 0) + silentPreferences.f١٩٠٧p.getProgress();
+                int progress = silentPreferences.f١٩٠٨q.getProgress() + 1;
+                b2.a.D(iG, "silent_jumuaa_start");
+                b2.a.D(progress, "silent_jumuaa_end");
+                double[] dArrG0 = b2.a.g0();
+                HashMap map = new HashMap();
+                map.put("lat", Double.valueOf(dArrG0[0]));
+                map.put("lng", Double.valueOf(dArrG0[1]));
+                map.put("refreshActivity", Boolean.FALSE);
+                map.put("onlyTimes", Boolean.TRUE);
+                androidx.work.g gVar = new androidx.work.g(map);
+                androidx.work.g.e(gVar);
+                m mVar = new m(PriereWorker.class);
+                ((o) mVar.f٤٧٧٨p).f٤٧٨٥e = gVar;
+                r.y0(silentPreferences).w(mVar.i());
+                break;
+            default:
+                double[] dArrG02 = b2.a.g0();
+                HashMap map2 = new HashMap();
+                map2.put("lat", Double.valueOf(dArrG02[0]));
+                map2.put("lng", Double.valueOf(dArrG02[1]));
+                map2.put("refreshActivity", Boolean.FALSE);
+                map2.put("onlyTimes", Boolean.TRUE);
+                androidx.work.g gVar2 = new androidx.work.g(map2);
+                androidx.work.g.e(gVar2);
+                m mVar2 = new m(PriereWorker.class);
+                ((o) mVar2.f٤٧٧٨p).f٤٧٨٥e = gVar2;
+                r.y0(this.f٢٧٣٦o).w(mVar2.i());
+                break;
+        }
+    }
+}

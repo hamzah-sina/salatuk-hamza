@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hour_short">
+        <item quantity="other">%s h</item>
+        <item quantity="zero"></item>
+        <item quantity="one">%s h</item>
+        <item quantity="two">%s h</item>
+        <item quantity="few">%s h</item>
+        <item quantity="many">%s h</item>
+    </plurals>
+    <plurals name="hours_ahead">
+        <item quantity="other">%s jam ke depan</item>
+        <item quantity="zero">jam yang sama</item>
+        <item quantity="one">%s jam ke depan</item>
+        <item quantity="two">%s jam ke depan</item>
+        <item quantity="few">%s jam ke depan</item>
+        <item quantity="many">%s jam ke depan</item>
+    </plurals>
+    <plurals name="hours_behind">
+        <item quantity="other">%s jam di belakang</item>
+        <item quantity="zero">jam yang sama</item>
+        <item quantity="one">%s jam di belakang</item>
+        <item quantity="two">%s jam di belakang</item>
+        <item quantity="few">%s jam di belakang</item>
+        <item quantity="many">%s jam di belakang</item>
+    </plurals>
+    <plurals name="minute_short">
+        <item quantity="other">%s min</item>
+        <item quantity="zero"></item>
+        <item quantity="one">%s min</item>
+        <item quantity="two">%s min</item>
+        <item quantity="few">%s min</item>
+        <item quantity="many">%s min</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notifikasi baru</item>
+        <item quantity="one">%d notifikasi baru</item>
+    </plurals>
+</resources>

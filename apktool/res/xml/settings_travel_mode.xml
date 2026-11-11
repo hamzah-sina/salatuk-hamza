@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/travel_mode_firstCat" android:key="travelModefirstCat">
+        <Preference android:layout="@layout/preference" android:summary="@string/travel_mode_definition" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/travel_mode_secondCat" android:key="travelModeSecondCat">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/travel_mode_activation_Title" android:key="@string/travel_mode_activation_Key" android:summary="@string/travel_mode_activation_Summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/travel_mode_activation_DefaultValue" />
+        <com.masarat.salati.util.ListPreference2 android:entries="@array/travel_mode_duration_entries" android:layout="@layout/preference" android:title="@string/travel_mode_duration_Title" android:key="@string/travel_mode_duration_Key" android:summary="@string/travel_mode_duration_Summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/travel_mode_duration_DefaultValue" android:positiveButtonText="@string/silent_dialog_ok" android:entryValues="@array/travel_mode_duration_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

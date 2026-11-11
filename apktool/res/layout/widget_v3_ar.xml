@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/w_parentLayout" android:background="@color/widget_day_20p" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/widget_paddingLeft" android:layout_marginTop="@dimen/widget_paddingTop" android:layout_marginRight="@dimen/widget_paddingRight" android:layout_marginBottom="@dimen/widget_paddingBottom" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/widget_error_msg" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+            <ProgressBar android:id="@id/w_menu_dots_gray_pb" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:indeterminateDrawable="@drawable/widget_dots_gray_anim" />
+            <ProgressBar android:id="@id/w_menu_dots_white_pb" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:indeterminateDrawable="@drawable/widget_dots_white_anim" />
+            <ImageView android:id="@id/w_menu_dots" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="16.5dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/widget_dots_gray" />
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:gravity="right" android:id="@id/w_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/cairo_regular" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Chronometer android:textSize="27.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/remaining_time_chronometer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:fontFamily="@font/cairo_regular" />
+            <TextView android:textSize="25.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/current_prayer_time" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/cairo_regular" />
+            <TextView android:textSize="@dimen/_22ssp" android:textColor="@android:color/darker_gray" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/w_prayer_name" android:focusable="true" android:focusableInTouchMode="true" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/cairo_regular">
+                <requestFocus android:focusable="true" android:focusableInTouchMode="true" android:duplicateParentState="true" />
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="left" android:id="@id/w_menu" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+</FrameLayout>

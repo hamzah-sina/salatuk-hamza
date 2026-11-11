@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/sms_responder_firstCat" android:key="smsResponderfirstCat">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/sms_responder_activation_Title" android:key="@string/sms_responder_activation_Key" android:summary="@string/sms_responder_activation_Summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/sms_responder_activation_DefaultValue" />
+        <com.masarat.salati.util.views.CustomEditTextPreference android:layout="@layout/preference" android:title="@string/sms_responder_msg_Title" android:key="@string/sms_responder_msg_Key" android:summary="@string/sms_responder_msg_Summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/sms_responder_msg_DefaultValue" android:positiveButtonText="@string/sms_responder_dialog_ok" android:negativeButtonText="@string/sms_responder_dialog_cancel" />
+        <com.masarat.salati.util.ListPreference2 android:entries="@array/sms_responder_notif_Entries" android:layout="@layout/preference" android:title="@string/sms_responder_notif_Title" android:key="@string/sms_responder_notif_Key" android:summary="@string/sms_responder_notif_Summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/sms_responder_notif_DefaultValue" android:positiveButtonText="@string/sms_responder_dialog_ok" android:entryValues="@array/sms_responder_notif_Values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/sms_responder_secondCat" android:key="smsResponderSecondCat">
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/sms_responder_silent_params_Title" android:key="@string/sms_responder_silent_params_Key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/sms_responder_silent_params_DefaultValue" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_fajr_Title" android:key="@string/sms_responder_fajr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_dohr_Title" android:key="@string/sms_responder_dohr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_jumuaa_Title" android:key="@string/sms_responder_jumuaa_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_asr_Title" android:key="@string/sms_responder_asr_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_maghreb_Title" android:key="@string/sms_responder_maghreb_Key" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_on" android:title="@string/sms_responder_ichaa_Title" android:key="@string/sms_responder_ichaa_Key" android:widgetLayout="@layout/preference_icon_next" />
+    </PreferenceCategory>
+</PreferenceScreen>

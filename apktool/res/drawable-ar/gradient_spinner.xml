@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="1.0dip" android:color="@color/black_opacity_50" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center|left" android:src="@drawable/ic_spinner_arrow" android:tint="@color/black_opacity_50" />
+    </item>
+</layer-list>

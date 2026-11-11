@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.masarat.salati.ui.views.MyPreferenceCategory android:layout="@layout/preference_category" android:title="@string/note" android:key="note_Cat">
+        <com.masarat.salati.ui.views.MyPreference android:layout="@layout/preference" android:key="note" android:summary="@string/noteSummary" />
+    </com.masarat.salati.ui.views.MyPreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/rp_firstPrefTitle" android:key="fb_Cat">
+        <com.masarat.salati.util.PreferenceFacebook android:key="fbkey" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/rp_prop" android:key="textShare">
+        <Preference android:layout="@layout/preference" android:title="@string/planOrShare" android:key="sharePlanified" android:summary="@string/sharePlanifiedSummary" />
+        <com.masarat.salati.ui.views.MonEditTextPreference android:layout="@layout/preference" android:title="@string/rp_Text_Default" android:key="rp_Text" android:summary="@string/rp_Text_Default_content" android:widgetLayout="@null" android:dialogTitle="@string/rp_Text_Default" />
+        <Preference android:layout="@layout/preference" android:title="@string/invite" android:key="inviter" android:summary="@string/inviteSummary" />
+    </PreferenceCategory>
+</PreferenceScreen>

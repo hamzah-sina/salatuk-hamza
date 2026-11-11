@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_10sdp">12.0dip</dimen>
+    <dimen name="_10ssp">12.0sp</dimen>
+    <dimen name="_11ssp">13.199982sp</dimen>
+    <dimen name="_12sdp">14.399994dip</dimen>
+    <dimen name="_12ssp">14.399994sp</dimen>
+    <dimen name="_13ssp">15.599976sp</dimen>
+    <dimen name="_14sdp">16.799988dip</dimen>
+    <dimen name="_14ssp">16.799988sp</dimen>
+    <dimen name="_15ssp">18.0sp</dimen>
+    <dimen name="_160sdp">192.0dip</dimen>
+    <dimen name="_16sdp">19.199982dip</dimen>
+    <dimen name="_16ssp">19.199982sp</dimen>
+    <dimen name="_20ssp">24.0sp</dimen>
+    <dimen name="_22ssp">26.399994sp</dimen>
+    <dimen name="_23ssp">27.599976sp</dimen>
+    <dimen name="_24sdp">28.799988dip</dimen>
+    <dimen name="_24ssp">28.799988sp</dimen>
+    <dimen name="_25sdp">30.0dip</dimen>
+    <dimen name="_26ssp">31.199982sp</dimen>
+    <dimen name="_28sdp">33.599976dip</dimen>
+    <dimen name="_2sdp">2.399994dip</dimen>
+    <dimen name="_32sdp">38.399994dip</dimen>
+    <dimen name="_35sdp">42.0dip</dimen>
+    <dimen name="_4sdp">4.799988dip</dimen>
+    <dimen name="_6sdp">7.1999817dip</dimen>
+    <dimen name="_70sdp">84.0dip</dimen>
+    <dimen name="_8sdp">9.599976dip</dimen>
+    <dimen name="_8ssp">9.599976sp</dimen>
+    <dimen name="_9ssp">10.799988sp</dimen>
+    <dimen name="_minus25sdp">-30.0dip</dimen>
+</resources>

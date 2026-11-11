@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="settings_dst"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/time_utc_offset_and_dst_cat" android:key="time_utc_offset_and_dst_cat">
+        <Preference android:layout="@layout/preference" android:title="@string/timezone_title" android:key="timezone_info" android:summary="" />
+        <com.masarat.salati.ui.views.PreferenceRadioButton android:layout="@layout/preference_radios" android:title="@string/time_utc_offset_mode_title" android:key="time_utc_offset_mode" app:firstChoiceSummary="@string/time_utc_offset_mode_auto_summary" app:firstChoiceTitle="@string/time_utc_offset_mode_auto" app:secondChoiceSummary="@string/time_utc_offset_mode_manual_summary" app:secondChoiceTitle="@string/time_utc_offset_mode_manual" />
+        <com.masarat.salati.util.ListPreference android:entries="@array/time_utc_offset_entries" android:layout="@layout/preference" android:title="@string/time_utc_offset_title" android:key="cashed_customized_utc_offset" android:summary="@string/time_utc_offset_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/time_utc_offset_defaultValue" android:negativeButtonText="@string/dialogPreference_cancel" android:entryValues="@array/time_utc_offset_values" />
+        <com.masarat.salati.ui.views.PreferenceRadioButton android:layout="@layout/preference_radios" android:title="@string/dst_mode_title" android:key="dst_mode" app:firstChoiceSummary="@string/dst_mode_auto_summary" app:firstChoiceTitle="@string/dst_mode_auto" app:secondChoiceSummary="@string/dst_mode_manual_summary" app:secondChoiceTitle="@string/dst_mode_manual" />
+        <CheckBoxPreference android:layout="@layout/preference" android:title="@string/dst_offset_title" android:key="dst_offset" android:summary="@string/dst_offset_summary" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/dst_offset_defaultValue" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/hijri_cat" android:key="hijri_cat">
+        <com.masarat.salati.util.ListPreference android:entries="@array/hijri_offset_entries" android:layout="@layout/preference" android:title="@string/hijri_offset_title" android:key="hijri_offset" android:summary="@string/hijri_offset_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/hijri_offset_defaultValue" android:negativeButtonText="@string/dialogPreference_cancel" android:entryValues="@array/hijri_offset_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/time_format_cat" android:key="time_format_cat">
+        <com.masarat.salati.util.ListPreference android:entries="@array/time_format_entries" android:layout="@layout/preference" android:title="@string/time_format_title" android:key="time_format_offset" android:summary="@string/time_format_summary" android:widgetLayout="@layout/preference_icon_list" android:defaultValue="@string/time_format_defaultValue" android:negativeButtonText="@string/dialogPreference_cancel" android:entryValues="@array/time_format_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

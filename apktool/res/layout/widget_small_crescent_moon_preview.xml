@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textDirection="ltr" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/widget_small_bg_dark" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center|right|top" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="5.0dip" android:layout_height="16.5dip" android:src="@drawable/widget_dots_white" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip" android:src="@drawable/widget_small_crescent_moon_preview_art" android:scaleType="fitCenter" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|top" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="40.0dip" android:text="1447" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_medium" />
+        <TextView android:textSize="25.0sp" android:textColor="#ff8ba2ba" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:layout_width="78.0dip" android:layout_height="42.0dip" android:text="03" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_medium" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="124.0dip" android:layout_height="20.0dip" android:layout_marginBottom="40.0dip" android:text="Ramadan" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/roboto_medium" />
+    </FrameLayout>
+</FrameLayout>

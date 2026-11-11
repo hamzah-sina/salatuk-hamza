@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/prayers_linear_layout_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/fajr_prayer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/shorok_prayer_view" android:tag="1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/dohr_prayer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/asr_prayer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/maghrib_prayer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+    <com.masarat.salati.ui.views.PrayerView android:id="@id/ishaa_prayer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:layout_weight="1.0" />
+</LinearLayout>

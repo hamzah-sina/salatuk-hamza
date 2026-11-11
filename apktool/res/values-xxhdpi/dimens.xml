@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_70sdp_home">20.0dip</dimen>
+    <dimen name="calendar_activity_city_name_text_size">14.0sp</dimen>
+    <dimen name="margin_padding_8_dp">8.0dip</dimen>
+    <dimen name="text_size_18_sp">18.0sp</dimen>
+    <dimen name="text_size_20_sp">20.0sp</dimen>
+    <dimen name="_12sdp_home">12.0dip</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/adhan_silent_firstCat" android:key="adhanSilentFirstCat">
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_fajr_title" android:key="@string/adhan_silent_fajr_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_fajr_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_dohr_title" android:key="@string/adhan_silent_dohr_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_dohr_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_jumuaa_title" android:key="@string/adhan_silent_jumuaa_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_jumuaa_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_asr_title" android:key="@string/adhan_silent_asr_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_asr_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_maghrib_title" android:key="@string/adhan_silent_maghrib_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_maghrib_defaultValue" />
+        <CheckBoxPreference android:layout="@layout/preference_without_summary" android:title="@string/adhan_silent_ichaa_title" android:key="@string/adhan_silent_ichaa_key" android:widgetLayout="@layout/preference_icon_checkbox" android:defaultValue="@string/adhan_silent_ichaa_defaultValue" />
+    </PreferenceCategory>
+</PreferenceScreen>

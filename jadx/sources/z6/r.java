@@ -1,0 +1,17 @@
+package z6;
+
+/* compiled from: r8-map-id-1f7525fce23a77ca5737cc01c4781c5fea0585ef334e56cbf05e29f39fb88622 */
+/* loaded from: classes.dex */
+public final class r {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final k f٦٨١٧a;
+
+    public r(k kVar) {
+        this.f٦٨١٧a = kVar;
+    }
+
+    public final String toString() {
+        return "Removed[" + this.f٦٨١٧a + ']';
+    }
+}

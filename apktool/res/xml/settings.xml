@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/s_cat_params" android:key="s_cat_params">
+        <Preference android:layout="@layout/preference_without_summary" android:title="@string/s_prayertimes" android:key="s_prayertimes" android:widgetLayout="@layout/preference_icon_next" />
+        <com.masarat.salati.util.PreferenceNew android:layout="@layout/preference_without_summary" android:title="@string/s_dst" android:key="s_dst" android:widgetLayout="@layout/preference_icon_next" />
+        <Preference android:layout="@layout/preference_without_summary" android:title="@string/s_adhan" android:key="s_adhan" android:widgetLayout="@layout/preference_icon_next" />
+    </PreferenceCategory>
+</PreferenceScreen>

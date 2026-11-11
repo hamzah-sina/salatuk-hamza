@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout="@layout/preference_category_purple" android:title="@string/s_iphone_ipad_apps_category" android:key="iphoneAndIpadApps">
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_salatuk_title" android:key="s_app_salatuk" android:summary="@string/s_app_salatuk_summary" android:widgetLayout="@null" app:prefIcon="@drawable/icon" app:prefLink="@string/s_app_salatuk_link" />
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_feelic_title" android:key="s_app_feelic" android:summary="@string/s_app_feelic_summary" android:widgetLayout="@null" app:prefIcon="@drawable/ic_feelic" app:prefLink="@string/s_app_feelic_link" />
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_alphabetOasis_title" android:key="s_app_alphabetOasis" android:summary="@string/s_app_alphabetOasis_summary" android:widgetLayout="@null" app:prefIcon="@drawable/ic_alphabet_oasis" app:prefLink="@string/s_app_alphabetOasis_link" />
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_iqetab_fatima_title" android:key="s_app_iqetab_fatima" android:summary="@string/s_app_iqetab_fatima_summary" android:widgetLayout="@null" app:prefIcon="@drawable/ic_iqetab_fatima" app:prefLink="@string/s_app_iqetab_fatima_link" />
+        <com.masarat.salati.ui.views.PreferenceWithIcon android:layout="@layout/preference_with_icon" android:title="@string/s_app_iqetab_omar_title" android:key="s_app_iqetab_omar" android:summary="@string/s_app_iqetab_omar_summary" android:widgetLayout="@null" app:prefIcon="@drawable/ic_iqetab_omar" app:prefLink="@string/s_app_iqetab_omar_link" />
+    </PreferenceCategory>
+</PreferenceScreen>

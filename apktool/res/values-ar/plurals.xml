@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hour_short">
+        <item quantity="other"></item>
+        <item quantity="zero"></item>
+        <item quantity="one">ساعة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%s ساعات</item>
+        <item quantity="many">%s ساعة</item>
+    </plurals>
+    <plurals name="hours_ahead">
+        <item quantity="other">سابق بـ %s ساعات</item>
+        <item quantity="zero">نفس الوقت</item>
+        <item quantity="one">سابق بساعة</item>
+        <item quantity="two">سابق بساعتين</item>
+        <item quantity="few">سابق بـ %s ساعات</item>
+        <item quantity="many">سابق بـ %s ساعات</item>
+    </plurals>
+    <plurals name="hours_behind">
+        <item quantity="other">مسبوق بـ %s ساعات</item>
+        <item quantity="zero">نفس الوقت</item>
+        <item quantity="one">مسبوق بساعة</item>
+        <item quantity="two">مسبوق بساعتين</item>
+        <item quantity="few">مسبوق بـ %s ساعات</item>
+        <item quantity="many">مسبوق بـ %s ساعات</item>
+    </plurals>
+    <plurals name="minute_short">
+        <item quantity="other"></item>
+        <item quantity="zero"></item>
+        <item quantity="one">دقيقة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%s دقائق</item>
+        <item quantity="many">%s دقيقة</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+</resources>

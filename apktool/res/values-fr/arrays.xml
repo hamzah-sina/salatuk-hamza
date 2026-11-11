@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adhan_titles">
+        <item>Adhan Makkah</item>
+        <item>Adhan Madina</item>
+        <item>Salatuk Adhan - Style Oriental 1</item>
+        <item>Salatuk Adhan - Style Oriental 2</item>
+        <item>Salatuk Adhan - Style Maghrébin 1</item>
+        <item>Salatuk Adhan - Style Maghrébin 2</item>
+    </string-array>
+    <string-array name="days">
+        <item>Dimanche</item>
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+    </string-array>
+    <string-array name="days_first_letter">
+        <item>L</item>
+        <item>M</item>
+        <item>M</item>
+        <item>J</item>
+        <item>V</item>
+        <item>S</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="dialogAbout_msg">
+        <item>Salatuk est votre compagnon de prières.</item>
+        <item>En vous localisant automatiquement, elle vous propose les horaires de prières adaptés et la direction de la Qibla correspondant à votre position.</item>
+        <item>"L'algorithme de Salatuk supporte une grande partie des méthodes de calcul adoptés dans les différents pays musulmans. En fonction de votre localité, l'application choisit la méthode, l'école Fiqhi et le Adhan appropriés."</item>
+        <item>"Toutefois, vous avez aussi la possibilité de modifier ces informations manuellement dans l'onglet Paramètres si vous le souhaitez."</item>
+        <item>Pour une bonne localisation, vous devez vous assurez que vos paramètres de localisation et votre connexion internet ou votre GPS sont bien activés !</item>
+        <item>Contactez nous sur :</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Devenez ami de Salatuk sur Facebook :</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>Salatuk sur Twitter :</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="dialogFeatures_msg">
+        <item>Nouvelles fonctionnalités:</item>
+        <item>- Réglages du mode nuit.</item>
+        <item>- Ajustements temporels pour divers pays.</item>
+        <item>"
+"</item>
+        <item>Pour toute question contactez nous sur</item>
+        <item>salatuk@masaratapp.com</item>
+        <item>Suivez nous sur Facebook</item>
+        <item>www.facebook.com/salatukapp</item>
+        <item>et Twitter</item>
+        <item>www.twitter.com/salatukapp</item>
+    </string-array>
+    <string-array name="gregorian_days_first_letter">
+        <item>L</item>
+        <item>M</item>
+        <item>M</item>
+        <item>J</item>
+        <item>V</item>
+        <item>S</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="months_hijri">
+        <item>Muharram</item>
+        <item>Safar</item>
+        <item>Rabia al-awwal</item>
+        <item>Rabia al-thani</item>
+        <item>Jumada al-awwal</item>
+        <item>Jumada al-thani</item>
+        <item>Rajab</item>
+        <item>Shaaban</item>
+        <item>Ramadan</item>
+        <item>Shawwal</item>
+        <item>Dhu al-Qiedah</item>
+        <item>Dhu al-Hijjah</item>
+    </string-array>
+    <string-array name="months_miladi">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+    <string-array name="prayers_adhans_text">
+        <item>Adhan Al-Fajr</item>
+        <item>As-Shorouq</item>
+        <item>Adhan Ad-Dohr</item>
+        <item>Adhan Al-Asr</item>
+        <item>Adhan Al-Maghrib</item>
+        <item>Adhan Al-Ichae</item>
+        <item>Adhan Al-Jumuaa</item>
+    </string-array>
+    <string-array name="pt_calcMethod_entries">
+        <item>"Autorité générale égyptienne de l'enquête"</item>
+        <item>Ligue Islamique Mondiale (MWL)</item>
+        <item>"Société islamique d'Amérique du Nord (ISNA)"</item>
+        <item>Umm al-Qura, La Mecque</item>
+        <item>Université des sciences islamiques, Karachi</item>
+        <item>Algérie, Ministère des Affaires Religieuses et des Wakfs</item>
+        <item>"Allemagne, Centre Islamique d'Aix-la-Chapelle"</item>
+        <item>Allemagne, Centre Islamique de Munich</item>
+        <item>Allemagne, Communauté islamique de Nuremberg</item>
+        <item>Asia, Méthode des pays du Sud-Est asiatique</item>
+        <item>Autriche, centre islamique de Vienne</item>
+        <item>Belgique, Centre Islamique et Culturel de Belgique</item>
+        <item>Canada, Association islamique de Windsor</item>
+        <item>Canada, Mississauga ISNA-Canada</item>
+        <item>Canada, Montreal, Centre Islamique de Quebec</item>
+        <item>"Canada, Société de l'information islamique de Calgary"</item>
+        <item>Emirats Arabes Unis, Autorité générale des Affaires islamiques et des Wakfs</item>
+        <item>Emirats Arabes Unis, Département des Affaires islamiques et des activités de bienfaisance-Dubai</item>
+        <item>"France, Conseil consultatif des imams de l'orléans"</item>
+        <item>France, Grande mosquée de Lyon</item>
+        <item>France, Grande Mosquée de Paris</item>
+        <item>France, Mosquée du Mirail à Toulouse</item>
+        <item>France, Union des Organisations Islamiques de France</item>
+        <item>Irak, Diwan du Wakf Sunnite</item>
+        <item>"Jordanie, Ministère de l'Awqaf, des affaires islamiques et des lieux saints"</item>
+        <item>Kazakhstan, Mosquée régionale de Kostanay</item>
+        <item>"Kuwait, Ministère de l'Awqaf et des affaires islamiques"</item>
+        <item>Libye, Ministère des Habous et Affaires Islamiques</item>
+        <item>Luxembourg, Centre Culturel Islamique du Grand-Duché de Luxembourg</item>
+        <item>Malaisie, Département du développement islamique de la Malaisie</item>
+        <item>Maldives, Ministère des affaires islamiques</item>
+        <item>Maroc, Ministère des Habous et Affaires Islamiques</item>
+        <item>"Oman, Ministère de l'Awqaf et des Affaires Religieuses"</item>
+        <item>Palestine, Le Ministère des Awqaf et des Affaires Religieuses</item>
+        <item>Qatar, Maison du Calendrier Qatarie</item>
+        <item>Royaume-Uni, Blackburn, Centre de la culture Islamique</item>
+        <item>Royaume-Uni, Mosquée centrale de Birmingham</item>
+        <item>Royaume-Uni, Mosquée centrale de Londres</item>
+        <item>Russie, Conseil muftis de la Russie</item>
+        <item>"Soudan, Le Ministère des Dotations et de l'orientation"</item>
+        <item>Switzerland, Centre Islamique de Genève</item>
+        <item>Syrie, Calendrier Hashemi</item>
+        <item>Tadjikistan, Centre Islamique De La République Du Tadjikistan</item>
+        <item>Tchèque, République Tchèque</item>
+        <item>Tunisie, Ministère des Affaires Religieuses</item>
+        <item>Turquie, Présidence des Affaires Religieuses</item>
+    </string-array>
+    <string-array name="pt_calcMethod_values">
+        <item>egypt</item>
+        <item>mwl</item>
+        <item>isna</item>
+        <item>makkah</item>
+        <item>karachi</item>
+        <item>algeria</item>
+        <item>aachen</item>
+        <item>munchen</item>
+        <item>nurnberg</item>
+        <item>malaysia</item>
+        <item>austria</item>
+        <item>belgium</item>
+        <item>windsor</item>
+        <item>mississauga</item>
+        <item>montreal</item>
+        <item>calgary</item>
+        <item>emirates</item>
+        <item>dubai</item>
+        <item>orleans</item>
+        <item>lyon</item>
+        <item>paris</item>
+        <item>toulouse</item>
+        <item>uoif</item>
+        <item>iraq</item>
+        <item>jordan</item>
+        <item>kazakhstan</item>
+        <item>kuwait</item>
+        <item>libya</item>
+        <item>luxembourg</item>
+        <item>malaysia</item>
+        <item>maldives</item>
+        <item>morocco</item>
+        <item>oman</item>
+        <item>palestine</item>
+        <item>qatar</item>
+        <item>blackburn</item>
+        <item>birmingham</item>
+        <item>london</item>
+        <item>moscow</item>
+        <item>sudan</item>
+        <item>switzerland</item>
+        <item>syria</item>
+        <item>tajikistan</item>
+        <item>czech</item>
+        <item>tunisia</item>
+        <item>turkey</item>
+    </string-array>
+    <string-array name="pt_higherLatitudesAdjustment_entries">
+        <item>Aucun ajustement</item>
+        <item>Méthode de moitié de la nuit</item>
+        <item>Méthode de 1/7ème de la Nuit</item>
+        <item>"Méthode basée sur l'angle"</item>
+    </string-array>
+    <string-array name="pt_juristicMethod_entries">
+        <item>Chafii/Maliki/Hanbali</item>
+        <item>Hanafi</item>
+    </string-array>
+    <string-array name="reminder_sounds_titles">
+        <item>Shahada - App</item>
+        <item>Hayya Ala Salah - App</item>
+        <item>Shahada - Makkah</item>
+        <item>Hayya Ala Salah - Makkah</item>
+        <item>Iqama, Complète - Makkah</item>
+        <item>Iqama, Courte - Makkah</item>
+        <item>Shahada - Madina</item>
+        <item>Hayya Ala Salah - Madina</item>
+        <item>Iqama, Complète - Madina</item>
+        <item>Iqama, Courte - Madina</item>
+        <item>Oiseaux 1</item>
+        <item>Oiseaux 2</item>
+        <item>Oiseaux 3</item>
+        <item>Sonnerie</item>
+        <item>Long Oiseaux 1</item>
+        <item>Long Oiseaux 2</item>
+        <item>Long Oiseaux 3</item>
+        <item>Longue Sonnerie</item>
+    </string-array>
+    <string-array name="s_adhan_alert_mode_entries">
+        <item>Fenêtre Popup</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="s_adhan_volume_type_entries">
+        <item>Utiliser le volume de la sonnerie</item>
+        <item>Utiliser le volume de la média</item>
+    </string-array>
+    <string-array name="s_calendar_availability_entries">
+        <item>Occupé</item>
+        <item>Disponible</item>
+    </string-array>
+    <string-array name="s_calendar_days_entries">
+        <item>7 jours</item>
+        <item>15 jours</item>
+    </string-array>
+    <string-array name="silent_notif_Entries">
+        <item>Sans notification</item>
+        <item>Vibreur</item>
+        <item>Son sans vibreur</item>
+        <item>Son avec vibreur</item>
+    </string-array>
+    <string-array name="sms_responder_notif_Entries">
+        <item>Sans notification</item>
+        <item>Vibreur</item>
+        <item>Son sans vibreur</item>
+        <item>Son avec vibreur</item>
+    </string-array>
+    <string-array name="time_format_entries">
+        <item>Automatique (Basé sur les paramétres du téléphone)</item>
+        <item>Utiliser le format 12-heure (1:00 pm)</item>
+        <item>Utiliser le format 24-heure (13:00)</item>
+    </string-array>
+    <string-array name="time_unites">
+        <item>minutes</item>
+        <item>heures</item>
+    </string-array>
+    <string-array name="travel_mode_duration_entries">
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>1.5 h</item>
+        <item>2 h</item>
+        <item>3 h</item>
+        <item>4 h</item>
+    </string-array>
+    <string-array name="vibration_type_Entries">
+        <item>Court</item>
+        <item>Moyen</item>
+        <item>Long</item>
+        <item>Très long</item>
+    </string-array>
+</resources>

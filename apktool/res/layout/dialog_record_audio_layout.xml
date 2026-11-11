@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Chronometer android:textSize="30.0sp" android:textColor="?textColor" android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="5.0dip" app:fontFamily="sans-serif-light" />
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/send_record_button" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_record_off" />
+</LinearLayout>
