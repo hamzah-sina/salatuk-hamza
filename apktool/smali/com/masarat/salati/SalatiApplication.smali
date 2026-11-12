@@ -518,6 +518,8 @@
     :goto_0
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
+    invoke-static {p0}, Lh5/w;->install(Landroid/content/Context;)V
+
     .line 9
     .line 10
     .line 11
