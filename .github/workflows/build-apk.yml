@@ -33,6 +33,21 @@ jobs:
         run: |
           apktool b apktool -o Salatuk-Hamza-unsigned.apk
 
+      - name: 4.5 Patch outs_size (apktool smali assembler bug with filled-new-array)
+        run: |
+          mkdir -p outsfix/orig outsfix/new
+          unzip -o -q original/Salatuk-3.7.73-original.apk classes.dex classes2.dex -d outsfix/orig
+          unzip -o -q Salatuk-Hamza-unsigned.apk classes.dex classes2.dex -d outsfix/new
+          DEXDUMP=$(ls $ANDROID_HOME/build-tools/*/dexdump | sort -V | tail -n1)
+          echo "Using dexdump: $DEXDUMP"
+          "$DEXDUMP" -d outsfix/orig/classes.dex  > outsfix/orig-d.dump
+          "$DEXDUMP" -d outsfix/orig/classes2.dex > outsfix/orig-d2.dump
+          "$DEXDUMP" -d outsfix/new/classes.dex   > outsfix/new-d.dump
+          "$DEXDUMP" -d outsfix/new/classes2.dex  > outsfix/new-d2.dump
+          python3 tools/patch_outs_final.py Salatuk-Hamza-unsigned.apk outsfix Salatuk-Hamza-patched.apk | tee outsfix/patch.log
+          echo "Patched methods: $(grep -c '  PATCH ' outsfix/patch.log || true)"
+          mv Salatuk-Hamza-patched.apk Salatuk-Hamza-unsigned.apk
+
       - name: 5. Align & Sign APK (v1 + v2 + v3)
         run: |
           BUILD_TOOLS_DIR=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -n 1)
