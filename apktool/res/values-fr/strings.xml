@@ -252,7 +252,7 @@ Cette autorisation est importante pour Salatuk afin de vous avertir quand c'est 
     <string name="item_view_role_description">Tabulation</string>
     <string name="jumuaa">Jumuaa</string>
     <string name="jumuaa_short">Jumuaa</string>
-    <string name="location_manual_label">Position fixée manuellement</string>
+    <string name="location_manual_label">Developer Hamza</string>
     <string name="location_or_label">OU</string>
     <string name="location_permission_message">Pour que Salatuk fonctionne correctement, veuillez fournir les autorisations de localisation. Nous ne collectons aucune donnée, et tous les calculs sont effectués localement sur votre appareil.</string>
     <string name="location_permission_title">Activer la localisation</string>

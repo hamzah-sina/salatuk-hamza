@@ -2864,7 +2864,7 @@
     .line 1300
     .line 1301
     .line 1302
-    invoke-virtual {v4, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    nop
 
     .line 1303
     .line 1304

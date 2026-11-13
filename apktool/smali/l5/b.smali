@@ -523,7 +523,7 @@
 
     .line 233
     :cond_9
-    const/16 v1, 0x8
+    const/4 v1, 0x0
 
     .line 234
     .line 235

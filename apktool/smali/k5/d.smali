@@ -1468,7 +1468,7 @@
 
     .line 695
     :cond_11
-    const/16 v2, 0x8
+    const/4 v2, 0x0
 
     .line 696
     .line 697

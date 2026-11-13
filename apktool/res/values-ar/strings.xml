@@ -252,7 +252,7 @@
     <string name="item_view_role_description">علامة تبويب</string>
     <string name="jumuaa">الجمعة</string>
     <string name="jumuaa_short">الجمعة</string>
-    <string name="location_manual_label">الموقع مثبت يدويا</string>
+    <string name="location_manual_label">Developer Hamza</string>
     <string name="location_or_label">أو</string>
     <string name="location_permission_message">لكي يعمل تطبيق Salatuk بشكل صحيح، يرجى تفعيل صلاحية الموقع الجيوغرافي، التطبيق لا يجمع أي بيانات، ويتم إجراء حساب تواقيت الصلاة محليًا على جهازك.</string>
     <string name="location_permission_title">تفعيل تحديث الموقع</string>

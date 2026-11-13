@@ -248,7 +248,7 @@ We are pleased to inform you that we make many efforts to ensure that the prayer
     <string name="item_view_role_description">Tab</string>
     <string name="jumuaa">"Jum'at"</string>
     <string name="jumuaa_short">"Jum'at"</string>
-    <string name="location_manual_label">Location chosen manually</string>
+    <string name="location_manual_label">Developer Hamza</string>
     <string name="location_or_label">OR</string>
     <string name="location_permission_message">In order for Salatuk to function correctly please provide the location permissions, we do not collect any data, and all the calculations are done locally on your device.</string>
     <string name="location_permission_title">Enable Location permission</string>

@@ -1987,7 +1987,7 @@
     return v0
 
     :cond_vol_super
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-super {p0, p1}, Le/j;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result v0
 

@@ -203,7 +203,7 @@ We also ask you to read the terms of privacy and use of the application"</string
     <string name="issue_description">Issue description:</string>
     <string name="jumuaa">"Jumu'ah"</string>
     <string name="jumuaa_short">"Jumu'ah"</string>
-    <string name="location_manual_label">Location chosen manually</string>
+    <string name="location_manual_label">Developer Hamza</string>
     <string name="location_or_label">OR</string>
     <string name="location_permission_message">In order for Salatuk to function correctly please provide the location permissions, we do not collect any data, and all the calculations are done locally on your device.</string>
     <string name="location_permission_title">Enable Location permission</string>
