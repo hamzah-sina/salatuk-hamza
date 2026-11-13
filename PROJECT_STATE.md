@@ -1,6 +1,8 @@
 # PROJECT_STATE.md — حالة مشروع Salatuk 3.7.73-hamza
 
-> آخر تحديث: 2026-11-13 (مساءً) | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `ec5943b`
+> آخر تحديث: 2026-11-14 | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `6341748`
+>
+> **CI جاهز**: الـ workflow يبني ويُرقّع outs (سكربت `tools/patch_outs_final.py` + المرجع `original/Salatuk-3.7.73-original.apk` الأصلي النقي) ويوقّع **بالمفتاح الحقيقي** عبر Secrets (`KEYSTORE_BASE64`/`KEYSTORE_PASSWORD`). آخر إصدار سليم: **Build #4** (`v3.7.73-hamza-4`) — موقّع بشهادة `b2dfcd02...f12b6f` و91 دالة مرقّعة. Build #3 معيب (قبل الترقيع) وموسوم Pre-release.
 
 ---
 
