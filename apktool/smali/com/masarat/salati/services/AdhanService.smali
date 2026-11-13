@@ -8548,7 +8548,7 @@
     move-result-object v1
 
     .line 442
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 443
     .line 444
