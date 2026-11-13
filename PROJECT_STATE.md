@@ -1,6 +1,6 @@
 # PROJECT_STATE.md — حالة مشروع Salatuk 3.7.73-hamza
 
-> آخر تحديث: 2026-11-13 | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `457d778`
+> آخر تحديث: 2026-11-13 (مساءً) | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `ec5943b`
 
 ---
 
@@ -47,9 +47,27 @@
 - الأساليب الجديدة (`dispatchKeyEvent` regs=6/ins=2/outs=3، `h5/v` regs=5/ins=3/outs=3) سليمة التسجيل
 - مسار الأذان الأصلي: `AdhanReceiver` ← WorkManager (`PlayAdhanWorker`) ← `startForegroundService` ← `AdhanService`
 
-**الإصلاحان المطبَّقان في الكود (commit `457d778`) — غير مُبنية/مُختبرة بعد**:
+**الإصلاحان المطبَّقان في الكود (commit `457d778`) — بُنيا وسُلِّما في commit `ec5943b` (2026-11-13)، لم تُختبَرا على جهاز بعد**:
 1. **`AdhanReceiver` أُعيدت كتابته**: تشغيل `AdhanService` مباشرة عبر `Ll2/f;->S` بدل تأخير WorkManager (يشتبه أن التأخير سبب ANR/انهيار).
-2. **`invoke-super` → `Le/j;`** في `dispatchKeyEvent` (`e/j` يعلن الدالة فعلًا — تأكد بالفحص).
+2. **`invoke-super` → `Le/j;`** في `dispatchKeyEvent` (`e/j` يعلن الدالة فعلًا — تم التحقق).
+
+**تحقق ساكن مكتمل (2026-11-13 قبل تسليم `ec5943b`)**:
+- `Le/j.dispatchKeyEvent` معلنة ✔ (السلسلة: AdhanAlarmActivity ← g0 ← e/j)
+- `Ll2/f.S` = `ContextCompat.startForegroundService` على SDK ≥ 26 (عبر `d0/c.b`) ✔
+- المانيفست: `AdhanService` بـ `foregroundServiceType="mediaPlayback"` + صلاحية `FOREGROUND_SERVICE_MEDIA_PLAYBACK` ✔
+- الإنذارات: `SCHEDULE_EXACT_ALARM` (حتى API 32) + `USE_EXACT_ALARM` (33+) ⇒ معفى رسميًا من قيود بدء FGS من الخلفية ✔
+- targetSdkVersion: **36**
+- مقارنة dexes (mؤنسَن الفهارس والإزاحات): `classes2.dex` = صفر فروقات؛ `classes.dex` = فقط التعديلات المقصودة (`SalatiActivity.w` return-void، `AdhanReceiver.onReceive`، `dispatchKeyEvent`، الفئتان `h5/v`/`h5/w`)
+- APK المُسلَّم: SHA-256 `f8c6af4e9c82fd8d13d5f392624370d96f26f0dfd9a2d516d13de620f5bf0b44`
+
+**قرار المجلس (2026-11-13)**: الإصلاحان فرضية سليمة الشكل لا حقيقة مُثبتة — الخطة الإلزامية:
+1. **اختبار أساس أولاً**: النسخة الأصلية النقية على نفس الجهاز، تنبيه بعد دقيقتين — إن انهارت فالجذر في كود المطور الأصلي لا تعديلاتنا.
+2. ثم النسخة `ec5943b`: تنبيه بعد دقيقتين.
+3. عند الانهيار: صورة إشعار «Salatuk Crash» (اسم الاستثناء حرفيًا) و/أو `adb logcat -b crash -d`.
+4. شجرة القرار حسب الاستثناء: `ForegroundServiceStartNotAllowedException` ← عودة لـ WorkManager؛ أثر شبكي ← مطاردة `SalatiRefreshWorker` حتى في المكتبات المشوّشة؛ `NoSuchMethodError` ← إعادة فحص invoke-super.
+5. **قاعدة العزل من اليوم**: تعديل واحد لكل نسخة تجريبية.
+6. إن نجح الأذان بلا إشعار: `POST_NOTIFICATIONS` غير ممنوح — ليس انهيارًا.
+7. بعد أول نجاح: بلا تعديل جديد لمدة أسبوع.
 
 **معلومة حاسمة اكتُشفت أثناء التحضير للمجلس**: مساعد ضبط المنبه `x5/p.F` يستخدم
 `setExactAndAllowWhileIdle` (على 31+ يشترط `canScheduleExactAlarms()`، وإلا يهبط لـ `set` عادي).
