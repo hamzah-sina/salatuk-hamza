@@ -40,26 +40,21 @@ jobs:
 
           "$BUILD_TOOLS_DIR/zipalign" -p -f -v 4 Salatuk-Hamza-unsigned.apk Salatuk-Hamza-aligned.apk
 
-          keytool -genkeypair -v \
-            -keystore hamza-release.jks \
-            -alias hamza \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -storepass hamza123456 \
-            -keypass hamza123456 \
-            -dname "CN=Developer Hamza, OU=Mobile, O=Developer Hamza, L=Tanta, ST=Gharbia, C=EG"
+          # فك ترميز المفتاح الحقيقي من Secret (نفس مفتاح البناء المحلي hamza-salatuk.jks)
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > hamza-release.jks
 
           "$BUILD_TOOLS_DIR/apksigner" sign \
             --ks hamza-release.jks \
             --ks-key-alias hamza \
-            --ks-pass pass:hamza123456 \
-            --key-pass pass:hamza123456 \
+            --ks-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
+            --key-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
             --v1-signing-enabled true \
             --v2-signing-enabled true \
             --v3-signing-enabled true \
             --out Salatuk-3.7.73-Hamza-Signed.apk \
             Salatuk-Hamza-aligned.apk
+
+          rm -f hamza-release.jks
 
           "$BUILD_TOOLS_DIR/apksigner" verify --verbose Salatuk-3.7.73-Hamza-Signed.apk
 
