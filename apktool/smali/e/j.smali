@@ -1607,7 +1607,9 @@
     return-void
 .end method
 
-.method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+# أُزيلت final: AdhanAlarmActivity يتجاوز هذه الدالة (إيقاف الأذان بزر الصوت)
+# وبقاء final يسبب LinkageError وقت تحميل الكلاس (سبب كل الانهيارات منذ 11-07).
+.method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
 
     .line 1
