@@ -44,9 +44,18 @@ jobs:
           "$DEXDUMP" -d outsfix/orig/classes2.dex > outsfix/orig-d2.dump
           "$DEXDUMP" -d outsfix/new/classes.dex   > outsfix/new-d.dump
           "$DEXDUMP" -d outsfix/new/classes2.dex  > outsfix/new-d2.dump
-          python3 tools/patch_outs_final.py Salatuk-Hamza-unsigned.apk outsfix Salatuk-Hamza-patched.apk | tee outsfix/patch.log
+          python3 tools/patch_outs_final.py Salatuk-Hamza-unsigned.apk outsfix Salatuk-Hamza-patched.apk > outsfix/patch.log 2>&1
           echo "Patched methods: $(grep -c '  PATCH ' outsfix/patch.log || true)"
+          tail -5 outsfix/patch.log
           mv Salatuk-Hamza-patched.apk Salatuk-Hamza-unsigned.apk
+
+      - name: 4.6 Verify outs_size (fail build on any violation)
+        run: |
+          DEXDUMP=$(ls $ANDROID_HOME/build-tools/*/dexdump | sort -V | tail -n1)
+          export DEXDUMP
+          rm -rf outsfix/verify && mkdir -p outsfix/verify
+          unzip -o -q Salatuk-Hamza-unsigned.apk classes.dex classes2.dex -d outsfix/verify
+          python3 tools/verify_outs.py outsfix/verify/classes.dex outsfix/verify/classes2.dex
 
       - name: 5. Align & Sign APK (v1 + v2 + v3)
         run: |

@@ -1,8 +1,8 @@
 # PROJECT_STATE.md — حالة مشروع Salatuk 3.7.73-hamza
 
-> آخر تحديث: 2026-11-14 | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `6341748`
+> آخر تحديث: 2026-11-14 (جلسة فحص الانهيار) | المستودع: https://github.com/hamzah-sina/salatuk-hamza (عام) | آخر commit: `9849cb3`
 >
-> **CI جاهز**: الـ workflow يبني ويُرقّع outs (سكربت `tools/patch_outs_final.py` + المرجع `original/Salatuk-3.7.73-original.apk` الأصلي النقي) ويوقّع **بالمفتاح الحقيقي** عبر Secrets (`KEYSTORE_BASE64`/`KEYSTORE_PASSWORD`). آخر إصدار سليم: **Build #4** (`v3.7.73-hamza-4`) — موقّع بشهادة `b2dfcd02...f12b6f` و91 دالة مرقّعة. Build #3 معيب (قبل الترقيع) وموسوم Pre-release.
+> **CI جاهز**: الـ workflow يبني ويُرقّع outs (سكربت `tools/patch_outs_final.py` + المرجع `original/Salatuk-3.7.73-original.apk` الأصلي النقي) ويُدقّق (`tools/verify_outs.py` — يفشل البناء عند أي مخالفة) ويوقّع **بالمفتاح الحقيقي** عبر Secrets (`KEYSTORE_BASE64`/`KEYSTORE_PASSWORD`).
 
 ---
 
@@ -43,38 +43,35 @@
 
 **الظاهرة**: رسالة «يستمر التطبيق Salatuk في التوقف» عند كل وقت صلاة/تنبيه، في كل النسخ المُسلَّمة.
 
-**ما استُبعد بالفحص**:
-- ترويسات DEX سليمة 100% (بعد الترقيع)
-- صفر كود شبكة متبقٍ (لا SecurityException ممكن)
-- الأساليب الجديدة (`dispatchKeyEvent` regs=6/ins=2/outs=3، `h5/v` regs=5/ins=3/outs=3) سليمة التسجيل
-- مسار الأذان الأصلي: `AdhanReceiver` ← WorkManager (`PlayAdhanWorker`) ← `startForegroundService` ← `AdhanService`
+### نتائج الفحص الموضوعي (2026-11-14) — الأسباب الثلاثة المزعومة
 
-**الإصلاحان المطبَّقان في الكود (commit `457d778`) — بُنيا وسُلِّما في commit `ec5943b` (2026-11-13)، لم تُختبَرا على جهاز بعد**:
-1. **`AdhanReceiver` أُعيدت كتابته**: تشغيل `AdhanService` مباشرة عبر `Ll2/f;->S` بدل تأخير WorkManager (يشتبه أن التأخير سبب ANR/انهيار).
-2. **`invoke-super` → `Le/j;`** في `dispatchKeyEvent` (`e/j` يعلن الدالة فعلًا — تم التحقق).
+فُحصت ادعاءات «ثلاثة أسباب» قُدّمت في جلسة سابقة، والنتيجة بالأدلة:
 
-**تحقق ساكن مكتمل (2026-11-13 قبل تسليم `ec5943b`)**:
-- `Le/j.dispatchKeyEvent` معلنة ✔ (السلسلة: AdhanAlarmActivity ← g0 ← e/j)
-- `Ll2/f.S` = `ContextCompat.startForegroundService` على SDK ≥ 26 (عبر `d0/c.b`) ✔
-- المانيفست: `AdhanService` بـ `foregroundServiceType="mediaPlayback"` + صلاحية `FOREGROUND_SERVICE_MEDIA_PLAYBACK` ✔
-- الإنذارات: `SCHEDULE_EXACT_ALARM` (حتى API 32) + `USE_EXACT_ALARM` (33+) ⇒ معفى رسميًا من قيود بدء FGS من الخلفية ✔
-- targetSdkVersion: **36**
-- مقارنة dexes (mؤنسَن الفهارس والإزاحات): `classes2.dex` = صفر فروقات؛ `classes.dex` = فقط التعديلات المقصودة (`SalatiActivity.w` return-void، `AdhanReceiver.onReceive`، `dispatchKeyEvent`، الفئتان `h5/v`/`h5/w`)
-- APK المُسلَّم: SHA-256 `f8c6af4e9c82fd8d13d5f392624370d96f26f0dfd9a2d516d13de620f5bf0b44`
+| # | الادعاء | الحكم | الدليل |
+|---|---|---|---|
+| 1 | `tools/patch_outs_final.py` يبحث عن `'Method'` بحرف كبير ويتجاهل الدوال ⇒ outs تالفة في `AdhanService.<init>` و`AdhanService.b` و`WidgetUpdater.<clinit>` | **مُنكَر** | السكربت في المستودع لا يحتوي هذا السطر أصلًا (يستخدم regex `\|\[([0-9a-f]+)\]`). جرى اختباره: يلتقط 16,773 ترويسة دالة في classes.dex. وفُحص APK نسخة **Build #5** الحقيقي المُنزَّل من Releases بمُدقّق مستقل مبني على dexdump الرسمي (عدّ وسائط invoke لكل دالة): **صفر مخالفات outs في كل الـ dexes**. والبناء المحلي نفسه نظيف. |
+| 2 | `NumberFormatException` عند قراءة `adhan_min` بقيمة افتراضية `""` غير محمية | **مُنكَر** | في `AdhanService.smali` (سطر ~12592): الافتراضي هو `"00"` (السجل v18 = const-string "00" في 8939) وليس `""`، و`parseInt("00")` = 0 سليم. لا مسار يرمي NumberFormatException من الافتراضي. |
+| 3 | `h5/w.smali` يعيد تمرير الاستثناء للمعالج الافتراضي ⇒ نافذة النظام | **صحيح الوصف — لكنه العَرَض لا السبب** | `h5/w.uncaughtException` يرسل إشعار «Salatuk Crash» + يكتب `crash.txt` ثم يستدعي المعالج الافتراضي ⇒ النافذة. وجود النافذة يعني وجود **استثناء حقيقي** لم نعرف هويته بعد. |
 
-**قرار المجلس (2026-11-13)**: الإصلاحان فرضية سليمة الشكل لا حقيقة مُثبتة — الخطة الإلزامية:
-1. **اختبار أساس أولاً**: النسخة الأصلية النقية على نفس الجهاز، تنبيه بعد دقيقتين — إن انهارت فالجذر في كود المطور الأصلي لا تعديلاتنا.
-2. ثم النسخة `ec5943b`: تنبيه بعد دقيقتين.
-3. عند الانهيار: صورة إشعار «Salatuk Crash» (اسم الاستثناء حرفيًا) و/أو `adb logcat -b crash -d`.
-4. شجرة القرار حسب الاستثناء: `ForegroundServiceStartNotAllowedException` ← عودة لـ WorkManager؛ أثر شبكي ← مطاردة `SalatiRefreshWorker` حتى في المكتبات المشوّشة؛ `NoSuchMethodError` ← إعادة فحص invoke-super.
-5. **قاعدة العزل من اليوم**: تعديل واحد لكل نسخة تجريبية.
-6. إن نجح الأذان بلا إشعار: `POST_NOTIFICATIONS` غير ممنوح — ليس انهيارًا.
-7. بعد أول نجاح: بلا تعديل جديد لمدة أسبوع.
+**الخلاصة**: الـ APK المُسلَّم سليم بنيويًا (outs/manifest/dex). السبب الجذري الحقيقي للانهيار
+**لا يزال مجهولًا** — والمصدر الأدق لهويته هو ملف `crash.txt` على الجهاز نفسه.
 
-**معلومة حاسمة اكتُشفت أثناء التحضير للمجلس**: مساعد ضبط المنبه `x5/p.F` يستخدم
-`setExactAndAllowWhileIdle` (على 31+ يشترط `canScheduleExactAlarms()`، وإلا يهبط لـ `set` عادي).
-التطبيق يملك `USE_EXACT_ALARM` ⇒ الإعفاء من قيود بدء الخدمة الأمامية من الخلفية **مفعّل غالبًا**،
-فالتشغيل المباشر الجديد يجب أن يعمل. إن رفضه النظام، سيجيب إشعار `Salatuk Crash` بالاسم الحرفي للاستثناء.
+### الإصلاح المطبَّق (2026-11-14) — إخفاء النافذة مع الإبقاء على التشخيص
+- `h5/w.smali`: أُزيل استدعاء المعالج الافتراضي (إعادة الرمي) — يُبلّغ فقط عبر إشعار
+  «Salatuk Crash» (يحوي نص الاستثناء كاملًا) وملف `crash.txt`. لن تظهر نافذة النظام
+  ولن يُقتل التطبيق عند أي استثناء.
+- `tools/verify_outs.py` (جديد) + خطوة `4.6` في الـ workflow: يفشل البناء عند أي مخالفة
+  outs في المستقبل (حماية دائمة من انحدار apktool).
+- ملاحظة أمنية: سكربت خارجي (`fix_all_and_push_salatuk.py` في Downloads) يحتوي المفتاح
+  `JKS_BASE64` نصًا صريحًا ويضع `hamza-salatuk.jks` في جذر المستودع العام — **لا تُشغَّل**،
+  والمفتاح يبقى في Secrets فقط. (كلمات المرور في PROJECT_STATE نفسها حساسة — قرار المستخدم.)
+
+### الخطوة التالية الإلزامية (تشخيص الجذر)
+1. ثبّت النسخة الجديدة (Build #6 أو الموقّعة محليًا)، انتظر أول أذان/تنبيه.
+2. **لن تظهر النافذة** — لكن انظر إشعار «Salatuk Crash» (نص الاستثناء) أو انسخ:
+   `Android/data/com.masarat.salati/files/crash.txt`
+3. أرسل محتوى الاستثناء ← إصلاح موجّه للجذر الحقيقي (تعديل واحد لكل نسخة).
+4. اختبار أساس (اختياري لكنه مفيد): النسخة الأصلية النقية على نفس الجهاز بتنبيه بعد دقيقتين.
 
 ---
 

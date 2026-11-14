@@ -271,12 +271,7 @@
     :catch_0
     nop
 
-    iget-object v0, p0, Lh5/w;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
-
-    :cond_2
+    # نُبلّغ فقط (إشعار Salatuk Crash + ملف crash.txt) ولا نمرر الاستثناء
+    # للمعالج الافتراضي حتى لا تظهر نافذة «يستمر التطبيق في التوقف».
     return-void
 .end method
